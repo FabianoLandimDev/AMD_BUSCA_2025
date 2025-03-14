@@ -43,7 +43,7 @@ from kivy.uix.gridlayout import GridLayout
 # Licença: MIT.
 #
 #
-# v1.0.6_2025_03_05, Fabiano Landim
+# v1.0.6_2025_03_14, Fabiano Landim
 # - Foram realizadas mudanças significativas no Programa, nessa versão em diante o mesmo funcionará na biblioteca kivy do Python, sendo assim houveram mudanças no Layout.
 # Licença: MIT
 #
@@ -78,15 +78,15 @@ cidade_6 = ['bananal', 'barbacena', 'barroso', 'caieiro', 'correia de almeida', 
 #
 # VIAÇÃO BASSAMAR:
 #
-cidade_7 = ['aeroporto', 'acampamento de campelina', 'andrelândia', 'arantina', 'argirita - conexão', 'bela vista de minas', 'bias fortes', 'bicas', 'boa vista', 'bom jardim de minas', 'br 267 - guarará', 'cachoeira', 'chiador', 'conceição', 'conceição do rio verde', 'conceicao do rio verde', 'conceiçao do rio verde', 'cdrv', '*conceição do monte alegre', '*conceiçao do monte alegre', 'cristais - conexão', 'descoberto', 'fazenda vitória - conexão', 'ferreira lage', 'guarará', 'joao ferreira - conexão', 'joão ferreira - conexão', 'leopoldina - conexão', '*liberdade', 'lima duarte', 'mar de espanha', 'maripa de minas - conexão', 'monte verde', 'olaria', 'orvalho', 'palmital', 'passo pátria', 'passo patria', 'passopatria', 'pedro teixeira', 'pequeri', 'ponte preta - conexão', 'recreio', 'rio preto', 'rochedo de minas', 'santa bárbara', 'snt bárbara', 'santa barbara', 'santa helena de minas - conexão', 'santa rita do jacutinga',  'snt rita do jacutinga', 'santana do deserto', 'santo antônio aventureiro', 'santo antonio aventureiro', 'são joão nepomuceno', 'sao joao nepomuceno', 'são roque de minas', 'sao roque de minas', 'são vicente de minas', 'sao vicente de minas', 'senador cortês', 'senador cortes', '*serra bocaina', 'sossego', 'tebas - conexão', 'torres', 'três ilhas', 'tres ilhas', '3 ilhas', 'valadares', 'vale sobrado']
+cidade_7 = ['aeroporto', 'acampamento de campelina', 'andrelândia', 'arantina', 'argirita - conexão', 'bela vista de minas', 'bias fortes', 'bicas', 'boa vista', 'bom jardim de minas - conexão', 'br 267 - guarará', 'cachoeira', 'chiador', 'conceição', 'conceição do rio verde', 'conceicao do rio verde', 'conceiçao do rio verde', '*conceição do monte alegre', '*conceiçao do monte alegre', 'coronel pacheco - conexão', 'cristais - conexão', 'descoberto', 'fazenda vitória - conexão', 'ferreira lage', 'guarará',  'goianá - conexão', 'goiana - conexão', 'joao ferreira - conexão', 'joão ferreira - conexão', 'leopoldina - conexão', '*liberdade', 'lima duarte', 'mar de espanha', 'maripa de minas - conexão', 'monte verde', 'olaria', 'orvalho', 'palmital', 'passo pátria', 'passo patria', 'passopatria', 'pedro teixeira', 'pequeri', 'ponte preta - conexão', 'recreio',  'rio novo - conexão', 'rio preto', 'rochedo de minas', 'santa bárbara', 'snt bárbara', 'santa barbara', 'santa helena de minas - conexão', 'santa rita do jacutinga',  'snt rita do jacutinga', 'santana do deserto', 'santo antônio aventureiro', 'santo antonio aventureiro', 'são joão nepomuceno', 'sao joao nepomuceno', 'são roque de minas', 'sao roque de minas', 'são vicente de minas', 'sao vicente de minas', 'senador cortês', 'senador cortes', 'serra bocaina - conexão', 'sossego', 'tebas - conexão', 'torres', 'três ilhas', 'tres ilhas', '3 ilhas', 'valadares', 'vale sobrado']
 #
 # VIAÇÃO RIO DOCE:
 #
-cidade_8 = ['águas pretas', 'aguas pretas', 'almenara', 'araçuaí', 'bicas-trevo', 'bicuíba', 'bom jesus do itabapoana', 'cachoeiro de itapemirim', 'cachoeiro de itapemirim', 'camacã', 'camacan', 'campanário', 'campos dos goytacazes', 'campos', 'caratinga', 'carlos chagas', 'dom cavate', 'engenheiro caldas', 'eng caldas', 'eunápolis', 'eunapolis', 'felisburgo', 'frei inocêncio', 'frei inocencio', 'governador valadares', 'guarapari', 'guaraparí', 'ilhéus', 'ilheus', 'inhapim', 'itabacuri', 'itabuna', 'itagimirim', 'itamaraju', 'itambé', 'itambe', 'itaobim', 'itaoca', 'itaperuna',  'jequitinhonha', 'leopoldina - conexão*', '*manhuaçu', '*manhuacu', 'marataizes', 'marataízes', 'monte pascoal', 'nanuque', 'novo cruzeiro', 'orizânia', 'orizania', 'pedra azul', 'piúma', 'piuma', 'posto da mata', 'realeza', 'rio do prado', 'santa bárbara do leste', 'santa barbara do leste', 'snt barbara do leste', 'santa clara', 'snt clara', 'teófilo otoni', 'teofilo otoni',  'vargem grande', 'vila velha', 'virgem da lapa', 'vdl', 'vitória', 'vitoria', 'vitória da conquista', 'vitoria da conquista', 'vdc']
+cidade_8 = ['águas pretas', 'aguas pretas', 'almenara', 'araçuaí', 'bicas-trevo', 'bicuíba', 'bom jesus do itabapoana', 'cachoeiro de itapemirim', 'cachoeiro de itapemirim', 'camacã', 'camacan', 'campanário', 'campos dos goytacazes', 'campos', 'caratinga', 'carlos chagas', 'dom cavate', 'engenheiro caldas', 'eng caldas', 'eunápolis', 'eunapolis', 'felisburgo', 'frei inocêncio', 'frei inocencio', 'governador valadares', 'guarapari', 'guaraparí', 'ilhéus', 'ilheus', 'inhapim', 'itabacuri', 'itabuna', 'itagimirim', 'itamaraju', 'itambé', 'itambe', 'itaobim', 'itaoca', 'itaperuna',  'jequitinhonha', 'leopoldina - conexão*', '*manhuaçu', '*manhuacu', 'marataizes', 'marataízes', 'monte pascoal', 'nanuque', 'novo cruzeiro', 'orizânia', 'orizania', 'pedra azul', 'piúma', 'piuma', 'posto da mata', 'realeza', 'rio do prado', 'santa bárbara do leste', 'santa barbara do leste', 'snt barbara do leste', 'santa clara', 'snt clara', 'teófilo otoni', 'teofilo otoni',  'vargem grande', 'vila velha', 'virgem da lapa', 'vdl', 'vitória', 'vitoria', 'vitória da conquista', 'vitoria da conquista']
 #
 # VIAÇÃO SANTA CRUZ:
 #
-cidade_9 = ['aiuruoca', '*alfenas', '*americana', 'andradas', '*araraquara', 'baependi', '*bom jardim de minas', '*bjdm', '*bragança paulista', 'cambuquira', '*campinas', 'carvalhos', 'catanduvas', 'caxambu', 'cruzilia', 'cruzília', 'guaxupé', 'guaxupe', 'lambari', 'passa quatro', 'piracicaba', '*pirassununga', 'poços de caldas', 'pocos de caldas', 'pouso alegre', 'ribeirão preto', 'ribeirao preto',  '*são carlos', '*sao carlos', 'são josé do rio preto', 'sao jose do rio preto', 'sjrp', '*são joão do rio preto', 'sao joao do rio preto', '*sjdrp', 'são lourenço', 'sao lourenço', 'sao lourenco', 'são tomé das letras', 'sao tome das letras', 'stdl', 'seritinga', 'três corações', 'tres coraçoes', 'tres coracoes', 'varginha', ]
+cidade_9 = ['aiuruoca', '*alfenas', '*americana', 'andradas', '*araraquara', 'baependi', 'bom jardim de minas', '*bragança paulista', 'cambuquira', '*campinas', 'carvalhos', 'catanduvas', 'caxambu', 'cruzilia', 'cruzília', 'guaxupé', 'guaxupe', 'lambari', 'passa quatro', 'piracicaba', '*pirassununga', 'poços de caldas', 'pocos de caldas', 'pouso alegre', 'ribeirão preto', 'ribeirao preto',  '*são carlos', '*sao carlos', 'são josé do rio preto', 'sao jose do rio preto', 'sjrp', '*são joão do rio preto', 'sao joao do rio preto', 'são lourenço', 'sao lourenço', 'sao lourenco', 'são tomé das letras', 'sao tome das letras', 'seritinga', 'três corações', 'tres coraçoes', 'tres coracoes', 'varginha', ]
 #
 # VIAÇÃO GONTIJO:
 #
@@ -110,7 +110,7 @@ cidade_14 = ['aeroporto - conexão', 'astolfo dutra', 'bicas-conexão', 'campest
 #
 # VIAÇÃO ÀGUIA BRANCA:
 #
-cidade_15 = ['foz do iguaçú', 'foz do iguaçu', 'foz do iguacu', 'são josé dos campos', 'sao jose dos campos', 'sjdc', '*taubaté', '*taubate']
+cidade_15 = ['foz do iguaçú', 'foz do iguaçu', 'foz do iguacu', 'são josé dos campos', 'sao jose dos campos', '*taubaté', '*taubate']
 #
 # VIAÇÃO ITAPEMIRIM:
 #
@@ -120,15 +120,15 @@ cidade_16 = ['*aracaju', 'aracaju', '*aracajú', '*aracaju', '*belo horizonte', 
 #
 # Referente ao valor da tarifa de R$0,85
 #
-tarifa_1 = ['aeroporto', 'aeroporto - conexão', 'goianá', 'goiana', 'conceição do rio verde', 'conceicao do rio verde', 'conceiçao do rio verde', 'coronel pacheco', 'ewbank da câmara', 'ewbank da camara', 'ewbank', 'eubank da camara', 'ferreira lage', 'joão ferreira', 'joao ferreira', 'joao ferreira - conexão', 'joão ferreira - conexão', 'matias barbosa', '*matias barbosa', 'monte verde', '*monte verde', 'passo da pátria', 'passo da patria', 'santa bárbara', 'snt bárbara', 'santa barbara', 'são roque de minas', 'sao roque de minas', 'senador cortês', 'senador cortes', 'triqueda', 'valadares'] 
+tarifa_1 = ['aeroporto', 'aeroporto - conexão', 'goianá', 'goiana', 'goianá - conexão', 'goiana - conexão', 'conceição do rio verde', 'conceicao do rio verde', 'conceiçao do rio verde', 'coronel pacheco', 'coronel pacheco - conexão', 'ewbank da câmara', 'ewbank da camara', 'ewbank', 'eubank da camara', 'ferreira lage', 'joão ferreira', 'joao ferreira', 'joao ferreira - conexão', 'joão ferreira - conexão', 'matias barbosa', '*matias barbosa', 'monte verde', '*monte verde', 'passo da pátria', 'passo da patria', 'santa bárbara', 'snt bárbara', 'santa barbara', 'são roque de minas', 'sao roque de minas', 'senador cortês', 'senador cortes', 'triqueda', 'valadares'] 
 #
 # Referente ao valor da tarifa de R$1,45
 #
-tarifa_2 = ['afonso arinos', 'bela vista de minas', 'bias fortes', 'bicas', 'bicas-conexão', 'boa vista', 'bom jardim de minas', '*bom jardim de minas', 'br 267 - guarará', 'cachoeira', 'caranguejo', 'chiador', 'conceiçao', 'conceicao', 'conceição', 'correia de almeida', 'cristais - conexão', 'faixa azul', 'fazenda vitória - conexão', 'guarani', 'guaraní', 'guarará', 'guarara', '*guarará', '*guarara', 'lima duarte', 'mar de espanha', 'maripá de minas - conexão', 'maripa de minas - conexão', 'olaria', 'orvalho', 'palmital','paraíba do sul', 'paraiba do sul', 'passo pátria', 'passo patria', 'passopatria', 'pedro teixeira', 'pequeri', 'pequerí', 'peróbas', 'perobas', 'piau', 'ponte preta', 'ponte preta - conexão', 'rio novo', 'rio pomba', 'rochedo de minas', 'santa helena de minas', 'santa helena de minas - conexão', 'snt helena de minas',  'santo antônio aventureiro', 'santos dumont', 'são joão da serra', 'sao joao da serra', 'são joão nepomuceno', 'sao joao nepomuceno', 'simão pereira', 'simao pereira', 'sossego', 'sôssego', '*sôssego', '*sossego', 'tabuleiro']
+tarifa_2 = ['afonso arinos', 'bela vista de minas', 'bias fortes', 'bicas', 'bicas-conexão', 'boa vista', 'bom jardim de minas', 'bom jardim de minas - conexão', 'br 267 - guarará', 'cachoeira', 'caranguejo', 'chiador', 'conceiçao', 'conceicao', 'conceição', 'correia de almeida', 'cristais - conexão', 'faixa azul', 'fazenda vitória - conexão', 'guarani', 'guaraní', 'guarará', 'guarara', '*guarará', '*guarara', 'lima duarte', 'mar de espanha', 'maripá de minas - conexão', 'maripa de minas - conexão', 'olaria', 'orvalho', 'palmital','paraíba do sul', 'paraiba do sul', 'passo pátria', 'passo patria', 'passopatria', 'pedro teixeira', 'pequeri', 'pequerí', 'peróbas', 'perobas', 'piau', 'ponte preta', 'ponte preta - conexão', 'rio novo', 'rio novo - conexão', 'rio pomba', 'rochedo de minas', 'santa helena de minas', 'santa helena de minas - conexão', 'snt helena de minas',  'santo antônio aventureiro', 'santos dumont', 'são joão da serra', 'sao joao da serra', 'são joão nepomuceno', 'sao joao nepomuceno', 'simão pereira', 'simao pereira', 'sossego', 'sôssego', '*sôssego', '*sossego', 'tabuleiro']
 #
 # Referente ao valor da tarifa de R$2,55
 #
-tarifa_3 = ['além paraíba', 'alem paraiba', 'além paraiba', 'alem paraíba', 'acampamento de campelina', 'alto jequitibá', 'alto jequitiba', 'alvorada de minas', 'argirita', 'argirita - conexão', 'astolfo dutra', 'barbacena', 'barroso', 'bom jesus da cachoeira', 'caieiro', 'campestre', 'carandaí', 'carandai', 'coimbra', 'ubá', 'uba', 'visconde do rio branco', 'cataguases', 'conceição do monte alegre', 'conceicao do monte alegre', '*conceição do monte alegre', '*conceicao do monte alegre', 'conservatória', 'conservatoria', 'descoberto', 'dona euzébia', 'dores de campos', 'ervália', 'ervalia', 'fortaleza de minas', 'helvas', 'ibertioga', 'itaipava', 'laranjal', 'levy gasparian', 'madre de deus', 'manoel duarte', 'mercês', 'merces', 'minduri', 'mindurí', 'miguel pereira', '*miguel pereira', 'nova friburgo', 'nova iguaçú', 'nova iguaçu', 'paraíba do sul', 'paraiba do sul', 'pds', 'petrópolis', 'petropolis', 'pirapitinga', 'piraúba', 'pirauba', 'prados', 'ressaquinha', 'rio das flores', 'rio preto', 'santana do deserto', 'são pedro da aldeia', 'sao pedro da aldeia', 'são sebastião da vitória', 'sao sebastiao da vitoria', 'senador firmino', 'serra bocaina', '*serra bocaina', 'sobral pinto', 'tebas - conexão', 'tebas', 'tiradentes', 'tocantins', 'toledos', 'três ilhas', 'tres ilhas', '3 ilhas', 'três rios',  'tres rios', '3 rios', 'vale sobrado', 'valença', 'vassouras', 'visconde do rio branco'] 
+tarifa_3 = ['além paraíba', 'alem paraiba', 'além paraiba', 'alem paraíba', 'acampamento de campelina', 'alto jequitibá', 'alto jequitiba', 'alvorada de minas', 'argirita', 'argirita - conexão', 'astolfo dutra', 'barbacena', 'barroso', 'bom jesus da cachoeira', 'caieiro', 'campestre', 'carandaí', 'carandai', 'coimbra', 'ubá', 'uba', 'visconde do rio branco', 'cataguases', 'conceição do monte alegre', 'conceicao do monte alegre', '*conceição do monte alegre', '*conceicao do monte alegre', 'conservatória', 'conservatoria', 'descoberto', 'dona euzébia', 'dores de campos', 'ervália', 'ervalia', 'fortaleza de minas', 'helvas', 'ibertioga', 'itaipava', 'laranjal', 'levy gasparian', 'madre de deus', 'manoel duarte', 'mercês', 'merces', 'minduri', 'mindurí', 'miguel pereira', '*miguel pereira', 'nova friburgo', 'nova iguaçú', 'nova iguaçu', 'paraíba do sul', 'paraiba do sul', 'pds', 'petrópolis', 'petropolis', 'pirapitinga', 'piraúba', 'pirauba', 'prados', 'ressaquinha', 'rio das flores', 'rio preto', 'santana do deserto', 'são pedro da aldeia', 'sao pedro da aldeia', 'são sebastião da vitória', 'sao sebastiao da vitoria', 'senador firmino', 'serra bocaina', 'serra bocaina - conexão', 'sobral pinto', 'tebas - conexão', 'tebas', 'tiradentes', 'tocantins', 'toledos', 'três ilhas', 'tres ilhas', '3 ilhas', 'três rios',  'tres rios', '3 rios', 'vale sobrado', 'valença', 'vassouras', 'visconde do rio branco'] 
 #
 # Referente ao valor da tarifa de R$5,25
 #
@@ -234,7 +234,7 @@ class MainApp(App):
                 'SITE: https://www.saritur.com.br/\n'
                 'FUNCIONAMENTO: dom a sex das 06h30 - 00h45\n'
                 'sab de 06h30 - 19h10\n'
-                'PLATAFORMA: 22\n'
+                'PLATAFORMA: 22\n\n'
 				'TARIFA DE EMBARQUE R$2,55'
             )
         elif nome  in cidade_1 and nome  in tarifa_4:
@@ -244,7 +244,7 @@ class MainApp(App):
                 'SITE: https://www.saritur.com.br/\n'
                 'FUNCIONAMENTO: dom a sex das 06h30 - 00h45\n'
                 'sab de 06h30 - 19h10\n'
-                'PLATAFORMA: 22\n'
+                'PLATAFORMA: 22\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
             )
         elif nome  in cidade_2 and nome  in tarifa_4:
@@ -270,7 +270,7 @@ class MainApp(App):
 				'=-=-=- EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30 =-=-=-\n\n' 
                 'CONTATOS:\n\nRODOVIÁRIA TRÊS RIOS (24)2251-5050\nPANTUR/JUIZ DE FORA:(32) 3216-2975 - WHATSAPP (32)98849-0016\nCENTER TOUR: (32) 3025-3936\n' 
                 'SITE: https://www.viacaoprogresso.com.br\nFUNCIONAMENTO: seg - sab 06h - 19h45 / dom 06h - 21h\n' 
-                'PLATAFORMAS: 25 e 26\n' 
+                'PLATAFORMAS: 25 e 26\n\n' 
                 'TARIFA DE EMBARQUE R$0,85'
 			)
         elif nome  in cidade_4 and nome  in tarifa_2:
@@ -383,42 +383,42 @@ class MainApp(App):
             resultado = (
 				'=-=-=- EMPRESA: VIAÇÃO BASSAMAR - GUICHÊ: 31 =-=-=-\n\nCONTATO: (32) 3215-1109\n' 
 				'SITE: https://www.viacaobassamar.queropassagem.com.br\n'
-				'FUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 19, 20, e 21\n'
+				'FUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 19, 20, e 21\n\n'
 			    'TARIFA DE EMBARQUE R$5,25'
 			)
         elif nome in cidade_8 and nome in tarifa_4:
             resultado = (
 				'EMPRESA: VIAÇÃO RIO DOCE - GUICHÊ: 32\n\nCONTATO: (32)3215-8828\n' 
 				'SITE: http://www.viacaoriodoce.com.br/\n\nFUNCIONAMENTO: DIARIAMENTE 07h - 21h\n'
-				'PLATAFORMA: 24\n'
+				'PLATAFORMA: 24\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 			)
         elif nome in cidade_9 and nome in tarifa_2:
             resultado = (
 				'EMPRESA: VIAÇÃO SANTA CRUZ  -  SUL MINAS\n\nCONTATO: (32) 3025-3936  -  GUICHÊ: 29\n' 
 				'SITE: https://viajesantacruz.com.br/\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n' 
-				'PLATAFORMA: 16\n'
+				'PLATAFORMA: 16\n\n'
 				'TARIFA DE EMBARQUE R$1,45'
 			)
         elif nome in cidade_9 and nome in tarifa_3:
             resultado = (
 				'EMPRESA: VIAÇÃO SANTA CRUZ  -  SUL MINAS\n\nCONTATO: (32) 3025-3936  -  GUICHÊ: 29\n' 
 				'SITE: https://viajesantacruz.com.br/\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n'
-				'PLATAFORMA: 16\n'
+				'PLATAFORMA: 16\n\n'
 				'TARIFA DE EMBARQUE R$2,55'
 			)
         elif nome in cidade_9 and nome in tarifa_4:
             resultado = (
 				'EMPRESA: VIAÇÃO SANTA CRUZ  -  SUL MINAS\n\nCONTATO: (32) 3025-3936  -  GUICHÊ: 29\n' 
 				'SITE: https://viajesantacruz.com.br/\n\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n' 
-				'PLATAFORMA: 16\n'
+				'PLATAFORMA: 16\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 			)
         elif nome in cidade_10 and nome in tarifa_4:
             resultado = (
 				'EMPRESA:VIAÇÃO GONTIJO - GUICHÊ: 27\n\nCONTATO:(32) 3215-9458  -  (32) 98710-6414\n' 
 				'SITE: https://www.gontijo.com.br/\n\nFUNCIONAMENTO: seg- sex 08h - 20h\nsab - dom - feriados 08h - 12h / 14h - 17h20\n' 
-				'PLATAFORMA: 27\n'
+				'PLATAFORMA: 27\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 			)
         elif nome in cidade_11 and nome in tarifa_1:
@@ -426,7 +426,7 @@ class MainApp(App):
 				'EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n'
 				'SITE: https://www.paraibunatransportes.com.br/\n' 
 				'FUNCIONAMENTO: seg à qui: 05h45 - 10h30 - 11h30 às 18h\nsex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\nsab e dom: 05h15 - 10h30 - 11h30- 18h\n'
-				'PLATAFORMA: 18\n'
+				'PLATAFORMA: 18\n\n'
 				'TARIFA DE EMBARQUE R$0,85'
 			)
         elif nome in cidade_11 and nome in tarifa_2:
@@ -434,28 +434,28 @@ class MainApp(App):
 				'EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n'
 				'SITE: https://www.paraibunatransportes.com.br/\n' 
 				'FUNCIONAMENTO:\n\nseg à qui: 05h45 - 10h30 - 11h30 às 18h\nsex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\nsab e dom: 05h15 - 10h30 - 11h30- 18h\n' 
-				'PLATAFORMA: 18\n'
+				'PLATAFORMA: 18\n\n'
 				'TARIFA DE EMBARQUE R$1,45'
 			)
         elif nome in cidade_11 and nome in tarifa_3:
             resultado = (
 				'EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n' 
 				'SITE: https://www.paraibunatransportes.com.br/\n' 
-				'FUNCIONAMENTO:\n\neg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\nsab e dom: 05h15 - 10h30 - 11h30- 18h\n' 'PLATAFORMA: 18'
+				'FUNCIONAMENTO:\n\neg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\nsab e dom: 05h15 - 10h30 - 11h30- 18h\n' 'PLATAFORMA: 18\n\n'
 				'TARIFA DE EMBARQUE R$2,55'
 			)
         elif nome in cidade_11 and nome in tarifa_4:
             resultado = (
 				'EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n'
 				'SITE: https://www.paraibunatransportes.com.br/\n' 
-				'FUNCIONAMENTO:\n\nseg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\nsab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18\n'
+				'FUNCIONAMENTO:\n\nseg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\nsab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 			)
         elif nome in cidade_12 and nome in tarifa_4:
            resultado = (
 				'EMPRESA: VIAÇÃO EXPRESSO UNIÃO / PLUMA - GUICHÊ: 25\n\nCONTATO: (32) 98710-6414\n' 
 				'SITE: https://www.expressouniao.com.br\n\nFUNCIONAMENTO:\n	seg - sex 09h - 18h\nsab dom feriados 14h - 18h (Intervalo: 12h30 - 13h30)\n' 
-				'PLATAFORMA: 29\n'
+				'PLATAFORMA: 29\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 		   )
         elif nome in cidade_13 and nome in tarifa_3:
@@ -473,33 +473,33 @@ class MainApp(App):
             resultado = (
 				'-=- EMPRESA: VIAÇÃO JOSÉ MARIA RODRIGUES - GUICHÊ 06 e 07 -=-\n\nCONTATO: (32)3215-4460 / (32) 3221-3232\n' 
 				'SITE: https://www.josemariarodrigues.com.br\n\nFUNCIONAMENTO: seg - qui 07h - 20h / sex, sáb e dom 07h - 21h30\n'
-				'PLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO\n'
+				'PLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO\n\n'
 				'TARIFA DE EMBARQUE R$0,85'
 			)
         elif nome in cidade_14 and nome in tarifa_2:
             resultado = (
 				'-=- EMPRESA: VIAÇÃO JOSÉ MARIA RODRIGUES - GUICHÊ 06 e 07 -=-\n\nCONTATO: (32)3215-4460 / (32) 3221-3232\n' 
 				'SITE: https://www.josemariarodrigues.com.br\n\nFUNCIONAMENTO: seg - qui 07h - 20h / sex, sáb e dom 07h - 21h30\n' 
-				'PLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO\n'
+				'PLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO\n\n'
 				'TARIFA DE EMBARQUE R$1,45'
 			)
         elif nome in cidade_14 and nome in tarifa_3:
             resultado = (
 				'-=- EMPRESA: VIAÇÃO JOSÉ MARIA RODRIGUES - GUICHÊ 06 e 07 -=-\n\nCONTATO: (32)3215-4460 / (32) 3221-3232\n' 
 				'SITE: https://www.josemariarodrigues.com.br\n\nFUNCIONAMENTO: seg - qui 07h - 20h / sex, sáb e dom 07h - 21h30\n' 
-				'PLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO\n'
+				'PLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO\n\n'
 				'TARIFA DE EMBARQUE R$2,55'
 		)
         elif nome in cidade_15 and nome in tarifa_4:
             resultado = (
 				'EMPRESA: VIAÇÃO ÀGUIA BRANCA - GUICHÊ 26\n\nCONTATO:(32) 98710-6414\nSITE: https://www.aguiabranca.com.br\n' 
-				'FUNCIONAMENTO:seg - sex 09h - 18h\nsab 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 12\n'
+				'FUNCIONAMENTO:seg - sex 09h - 18h\nsab 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 12\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 			)
         elif nome in cidade_16:
             resultado = (
 				'EMPRESA: VIAÇÃO ITAPEMIRIM / KAISSARA - GUICHÊ: 29\n\nCONTATOS: (32) 3215-5020 \n0800 723 2121\n' 
-				'FUNCIONAMENTO: seg - sab 06h - 19h\ndom 07h - 22h\n\nPLATAFORMA: 28\n'
+				'FUNCIONAMENTO: seg - sab 06h - 19h\ndom 07h - 22h\n\nPLATAFORMA: 28\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 			)
 		#
@@ -537,7 +537,7 @@ class MainApp(App):
         elif nome == 'guarda municipal' or nome == 'gm':
             resultado = (
 				'-=-==-=-=-= GUARDA MUNICIPAL DE JUIZ DE FORA -=-=-=-=-=-=\n\n' 
-				'CONTATO: 153 ou (32)3690-7137'
+				'CONTATO: 153 ou (32) 3690-7137'
 			)
 		#
         elif nome == 'cargas util' or nome == 'util cargas':
@@ -726,14 +726,14 @@ class MainApp(App):
 		#
         elif nome == 'p7' or nome == 'p 7' or nome == 'p07' or nome == 'p 07':
             resultado = (
-				'P7 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=>>\n\nESTACIONAMENTO DO TERMINAL RODOVIÁRIO DE JUIZ DE FORA\n' 
-				'ESTACIONAMENTO PAGO, EM CASO DE DÚVIDAS SOBRE ADESÃO DE NOVOS MENSALISTAS\n' 
-				'PESQUISAR PELA PALAVRA CHAVE "MENSALISTA"'
+				'P7 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=>>\n\nESTACIONAMENTO PAGO DO TERMINAL RODOVIÁRIO EM JUIZ DE FORA\n\n' 
+				'EM CASO DE DÚVIDAS SOBRE ADESÃO DE NOVOS MENSALISTAS:\n' 
+				'PESQUISAR PELA PALAVRA CHAVE\n\n>>> "MENSALISTA" <<<'
 			)
 		#
         elif nome == 'p8' or nome == 'p 8' or nome == 'p08' or nome == 'p 08':
             resultado = (
-				'P8 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=>>\n\nREFEITÓRIO FUNCIONÁRIOS AMD NO TERMINAL RODOVIÁRIO DE JUIZ DE FORA'
+				'P8 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=>>\n\nREFEITÓRIO FUNCIONÁRIOS AMD SERVICES NO TERMINAL RODOVIÁRIO DE JUIZ DE FORA'
 			)
 		#
         elif nome == 'p9' or nome == 'p 9' or nome == 'p09' or nome == 'p 09':
