@@ -143,7 +143,7 @@ lista_geral = ['inss', 'previdencia', 'previdência', 'previdência social', 'co
 class MainApp(App):
     def build(self):
         self.combined_cidades = self.get_combined_cidades()
-        self.title = "AMD BUSCA  -  v1.0.6_2025_03_05 / Desenvolvido por: Fabiano Landim"
+        self.title = "AMD BUSCA  -  v1.0.6_2025_03_17 / Desenvolvido por: Fabiano Landim"
         
         layout = BoxLayout(orientation='vertical', padding=10, spacing=10)
         
@@ -152,7 +152,7 @@ class MainApp(App):
             font_size=24,
             size_hint_y=None,
             height=30,
-            color=('blue')
+            color=('#1E90FF')
         )
         layout.add_widget(title)
         
@@ -215,7 +215,7 @@ class MainApp(App):
                 unique_matches.append(match)
         
         for match in unique_matches[:5]:
-            btn = Button(text=match, size_hint_y=None, height=40, background_color=(0.95, 0.95, 0.95, 2))
+            btn = Button(text=match, size_hint_y=None, height=40, background_color=('#5F9EA0'))
             btn.bind(on_release=lambda b: self.select_suggestion(b.text))
             self.suggestions_grid.add_widget(btn)
     def select_suggestion(self, text):
