@@ -43,7 +43,7 @@ from kivy.uix.gridlayout import GridLayout
 # Licença: MIT.
 #
 #
-# v1.0.6_2025_03_14, Fabiano Landim
+# v1.0.6_2025_03_21, Fabiano Landim
 # - Foram realizadas mudanças significativas no Programa, nessa versão em diante o mesmo funcionará na biblioteca kivy do Python, sendo assim houveram mudanças no Layout.
 # Licença: MIT
 #
@@ -62,7 +62,7 @@ cidade_1 = ['bh', 'belo horizonte', 'betim', 'carandaí', 'carandai', 'congonhas
 #
 # VIAÇÃO UTIL/ BRISA/ SAMPAIO:
 #
-cidade_2 = ['angra dos reis', 'adr', 'brasília', 'brasilia', 'caxias', 'conservatória', 'conservatoria', 'gurupi', 'gurupí', 'imperatriz', 'macaé', 'macae', 'madureira', 'rdj', 'rio de janeiro', 'rj', 'valença', 'valenca', 'manoel duarte', 'mogi das cruzes', 'mdc', 'niterói', 'niteroi', 'ouro branco', 'parati', 'pernambuco', 'rio das flores', 'rio das ostras - próximo secretaria de turismo', 'são bernardo do campo', 'sao bernardo do campo', 'sbdc', 'são josé dos campos', 'sao jose dos campos', 'sjdc', 'taubaté', 'taubate', 'valença', 'valenca']
+cidade_2 = ['angra dos reis', 'brasília', 'brasilia', 'caxias', 'conservatória', 'conservatoria', 'goiânia - "util"', 'goiania - "util"', 'gurupi', 'gurupí', 'imperatriz', 'macaé', 'macae', 'madureira', 'rio de janeiro', 'rj', 'valença', 'valenca', 'manoel duarte', 'mogi das cruzes', 'niterói', 'niteroi', 'ouro branco', 'parati', 'pernambuco', 'rio das flores', 'rio das ostras - próximo secretaria de turismo', 'são bernardo do campo', 'sao bernardo do campo', 'sbdc', 'são josé dos campos - "util"', 'sao jose dos campos - "util"', 'taubaté', 'taubate', 'valença', 'valenca']
 #
 # VIAÇÃO UNIDA:
 #
@@ -70,27 +70,27 @@ cidade_5 = ['caranguejo', 'coimbra', 'coronel fabriciano', 'ervália', 'ervalia'
 #
 # VIAÇÃO COMETA / CATARINENSE / EXPRESSO DO SUL / 1001:
 #
-cidade_3 = ['alfenas', 'águas de lindóia', 'aguas de lindoia', 'adl', 'americana', 'aparecida do norte', 'bragança paulista', 'braganca paulista', 'campinas', 'campo mourão', 'campo mourao', 'sp', 'são paulo', 'sao paulo', 'araraquara', '*catanduvas', 'curitiba', 'extrema', 'florianópolis',  'florianopolis', 'floripa', 'jacareí', 'jacarei', 'joinvile', 'jundiaí', 'jundiai', 'londrina', 'medianeira', 'mogi mirim', 'mogi guaçu', 'mogi guaçú', 'mogi guacu', 'ourinhos', '*piracicaba', 'pirassununga', 'porto alegre', 'resende', '*ribeirão preto', '*ribeirao preto', 'santo andré', 'santo andre', 'santos', 'são caetano', 'sao caetano', 'são carlos', 'sao carlos', 'são gonçalo do sapucaia', 'sao gonçalo do sapucaia', 'sgds', 'são joão do rio preto', 'sao joao do rio preto', 'sorocaba']
+cidade_3 = ['alfenas', 'águas de lindóia', 'aguas de lindoia', 'americana', 'aparecida do norte', 'bragança paulista', 'braganca paulista', 'campinas', 'campo mourão', 'campo mourao', 'são paulo - "cometa"', 'sao paulo - cometa', 'araraquara', '*catanduvas', 'curitiba', 'extrema', 'florianópolis',  'florianopolis', 'floripa', 'jacareí', 'jacarei', 'joinvile', 'jundiaí', 'jundiai', 'londrina', 'medianeira', 'mogi mirim', 'mogi guaçu', 'mogi guaçú', 'mogi guacu', 'ourinhos', '*piracicaba', 'pirassununga', 'porto alegre', 'resende', '*ribeirão preto', '*ribeirao preto', 'santo andré', 'santo andre', 'santos', 'são caetano', 'sao caetano', 'são carlos', 'sao carlos', 'são gonçalo do sapucaia', 'sao gonçalo do sapucaia', 'são joão do rio preto', 'sao joao do rio preto', 'sorocaba']
 #
 # VIAÇÃO TRANSUR:
 #
-cidade_6 = ['bananal', 'barbacena', 'barroso', 'caieiro', 'correia de almeida', 'cda', 'dores de campos', 'ddc', 'ewbank da câmara', 'ewbank da camara', 'edc', 'faixa azul', 'helvas', 'ibertioga', 'itutinga', 'lavras', 'madre de deus', 'mdd',  'peróbas', 'perobas', 'prados', 'santos dumont', 'são joão da serra', 'sjds', 'sao joao da serra', 'são joão del rei', 'sao joao del rei', 'sjdr', 'são sebastião da vitória', 'sao sebastiao da vitoria', 'ssdv', 'tiradentes']
+cidade_6 = ['bananal', 'barbacena', 'barroso', 'caieiro', 'correia de almeida', 'dores de campos', 'ewbank da câmara', 'ewbank da camara', 'faixa azul', 'helvas', 'ibertioga', 'itutinga', 'lavras', 'madre de deus', 'peróbas', 'perobas', 'prados', 'santos dumont', 'são joão da serra', 'sao joao da serra', 'são joão del rei', 'sao joao del rei', 'são sebastião da vitória', 'sao sebastiao da vitoria', 'tiradentes']
 #
 # VIAÇÃO BASSAMAR:
 #
-cidade_7 = ['aeroporto', 'acampamento de campelina', 'andrelândia', 'arantina', 'argirita - conexão', 'bela vista de minas', 'bias fortes', 'bicas', 'boa vista', 'bom jardim de minas - conexão', 'br 267 - guarará', 'cachoeira', 'chiador', 'conceição', 'conceição do rio verde', 'conceicao do rio verde', 'conceiçao do rio verde', '*conceição do monte alegre', '*conceiçao do monte alegre', 'coronel pacheco - conexão', 'cristais - conexão', 'descoberto', 'fazenda vitória - conexão', 'ferreira lage', 'guarará',  'goianá - conexão', 'goiana - conexão', 'joao ferreira - conexão', 'joão ferreira - conexão', 'leopoldina - conexão', '*liberdade', 'lima duarte', 'mar de espanha', 'maripa de minas - conexão', 'monte verde', 'olaria', 'orvalho', 'palmital', 'passo pátria', 'passo patria', 'passopatria', 'pedro teixeira', 'pequeri', 'ponte preta - conexão', 'recreio',  'rio novo - conexão', 'rio preto', 'rochedo de minas', 'santa bárbara', 'snt bárbara', 'santa barbara', 'santa helena de minas - conexão', 'santa rita de jacutinga',  'snt rita de jacutinga', 'santana do deserto', 'santo antônio aventureiro', 'santo antonio aventureiro', 'são joão nepomuceno', 'sao joao nepomuceno', 'são roque de minas', 'sao roque de minas', 'são vicente de minas', 'sao vicente de minas', 'senador cortês', 'senador cortes', 'serra bocaina - conexão', 'sossego', 'tebas - conexão', 'torres', 'três ilhas', 'tres ilhas', '3 ilhas', 'valadares', 'vale sobrado']
+cidade_7 = ['aeroporto - "bassamar"', 'acampamento de campelina', 'andrelândia', 'arantina', 'argirita - conexão', 'bela vista de minas', 'bias fortes', 'bicas', 'boa vista', 'bom jardim de minas - conexão', 'br 267 - guarará', 'cachoeira', 'chiador', 'conceição', 'conceição do rio verde', 'conceicao do rio verde', 'conceiçao do rio verde', '*conceição do monte alegre', '*conceiçao do monte alegre', 'coronel pacheco - conexão', 'cristais - conexão', 'descoberto', 'fazenda vitória - conexão', 'ferreira lage', 'guarará',  'goianá - conexão', 'goiana - conexão', 'joao ferreira - conexão', 'joão ferreira - conexão', 'leopoldina - conexão', '*liberdade', 'lima duarte', 'mar de espanha', 'maripa de minas - conexão', 'monte verde', 'olaria', 'orvalho', 'palmital', 'passo pátria', 'passo patria', 'passopatria', 'pedro teixeira', 'pequeri', 'ponte preta - conexão', 'recreio',  'rio novo - conexão', 'rio preto', 'rochedo de minas', 'santa bárbara', 'snt bárbara', 'santa barbara', 'santa helena de minas - conexão', 'santa rita de jacutinga',  'snt rita de jacutinga', 'santana do deserto', 'santo antônio aventureiro', 'santo antonio aventureiro', 'são joão nepomuceno', 'sao joao nepomuceno', 'são roque de minas', 'sao roque de minas', 'são vicente de minas', 'sao vicente de minas', 'senador cortês', 'senador cortes', 'serra bocaina - conexão', 'sossego', 'tebas - conexão', 'torres', 'três ilhas', 'tres ilhas', '3 ilhas', 'valadares', 'vale sobrado']
 #
 # VIAÇÃO RIO DOCE:
 #
-cidade_8 = ['águas pretas', 'aguas pretas', 'almenara', 'araçuaí', 'bicas-trevo', 'bicuíba', 'bom jesus do itabapoana', 'cachoeiro de itapemirim', 'cachoeiro de itapemirim', 'camacã', 'camacan', 'campanário', 'campos dos goytacazes', 'campos', 'caratinga', 'carlos chagas', 'dom cavate', 'engenheiro caldas', 'eng caldas', 'eunápolis', 'eunapolis', 'felisburgo', 'frei inocêncio', 'frei inocencio', 'governador valadares', 'guarapari', 'guaraparí', 'ilhéus', 'ilheus', 'inhapim', 'itabacuri', 'itabuna', 'itagimirim', 'itamaraju', 'itambé', 'itambe', 'itaobim', 'itaoca', 'itaperuna',  'jequitinhonha', 'leopoldina - conexão*', '*manhuaçu', '*manhuacu', 'marataizes', 'marataízes', 'monte pascoal', 'nanuque', 'novo cruzeiro', 'orizânia', 'orizania', 'pedra azul', 'piúma', 'piuma', 'posto da mata', 'realeza', 'rio do prado', 'santa bárbara do leste', 'santa barbara do leste', 'snt barbara do leste', 'santa clara', 'snt clara', 'teófilo otoni', 'teofilo otoni',  'vargem grande', 'vila velha', 'virgem da lapa', 'vdl', 'vitória', 'vitoria', 'vitória da conquista', 'vitoria da conquista']
+cidade_8 = ['águas pretas', 'aguas pretas', 'almenara', 'araçuaí', 'bicas-trevo', 'bicuíba', 'bom jesus do itabapoana', 'cachoeiro de itapemirim', 'camacã', 'camacan', 'campanário', 'campos dos goytacazes', 'campos', 'caratinga', 'carlos chagas', 'dom cavate', 'engenheiro caldas', 'eng caldas', 'eunápolis', 'eunapolis', 'felisburgo', 'frei inocêncio', 'frei inocencio', 'governador valadares', 'guarapari', 'guaraparí', 'ilhéus', 'ilheus', 'inhapim', 'itabacuri', 'itabuna', 'itagimirim', 'itamaraju', 'itambé', 'itambe', 'itaobim', 'itaoca', 'itaperuna',  'jequitinhonha', 'leopoldina - conexão*', '*manhuaçu', '*manhuacu', 'marataizes', 'marataízes', 'monte pascoal', 'nanuque', 'novo cruzeiro', 'orizânia', 'orizania', 'pedra azul', 'piúma', 'piuma', 'posto da mata', 'realeza', 'rio do prado', 'santa bárbara do leste', 'santa barbara do leste', 'snt barbara do leste', 'santa clara', 'snt clara', 'teófilo otoni', 'teofilo otoni',  'vargem grande', 'vila velha', 'virgem da lapa', 'vdl', 'vitória', 'vitoria', 'vitória da conquista', 'vitoria da conquista']
 #
 # VIAÇÃO SANTA CRUZ:
 #
-cidade_9 = ['aiuruoca', '*alfenas', '*americana', 'andradas', '*araraquara', 'baependi', 'bom jardim de minas', '*bragança paulista', 'cambuquira', '*campinas', 'carvalhos', 'catanduvas', 'caxambu', 'cruzilia', 'cruzília', 'guaxupé', 'guaxupe', 'lambari', 'passa quatro', 'piracicaba', '*pirassununga', 'poços de caldas', 'pocos de caldas', 'pouso alegre', 'ribeirão preto', 'ribeirao preto',  '*são carlos', '*sao carlos', 'são josé do rio preto', 'sao jose do rio preto', 'sjrp', '*são joão do rio preto', 'sao joao do rio preto', 'são lourenço', 'sao lourenço', 'sao lourenco', 'são tomé das letras', 'sao tome das letras', 'seritinga', 'três corações', 'tres coraçoes', 'tres coracoes', 'varginha', ]
+cidade_9 = ['aiuruoca', '*alfenas', '*americana', 'andradas', '*araraquara', 'baependi', 'bom jardim de minas', '*bragança paulista', 'cambuquira', '*campinas', 'carvalhos', 'catanduvas', 'caxambu', 'cruzilia', 'cruzília', 'guaxupé', 'guaxupe', 'lambari', 'passa quatro', 'piracicaba', '*pirassununga', 'poços de caldas', 'pocos de caldas', 'pouso alegre', 'ribeirão preto', 'ribeirao preto',  '*são carlos', '*sao carlos', 'são josé do rio preto', 'sao jose do rio preto', '*são joão do rio preto', 'sao joao do rio preto', 'são lourenço', 'sao lourenço', 'sao lourenco', 'são tomé das letras', 'sao tome das letras', 'seritinga', 'três corações', 'tres coraçoes', 'tres coracoes', 'varginha', ]
 #
 # VIAÇÃO GONTIJO:
 #
-cidade_10 = ['alto araguaia', 'alto garças', 'anápolis', 'anapolis', 'aracajú', 'araxá', 'arcos', 'bambuí', 'bom despacho', 'campo belo', 'campos altos', 'cana verde', 'candeias', 'catalão', 'cristais', 'cuiabá', 'divinópolis', 'divinopolis', 'estalagem', 'feira de santana', 'fds', 'formiga', 'iguatama', 'itumbiara', 'jaciara', 'jataí', 'jequié', 'joão pessoa', 'joao pessoa', 'mineiros', 'nova ponte', 'nova serrana', 'oliveira', 'perdões', 'perdoes', 'rio verde', 'rondonópolis', 'rondonopolis', 'santa juliana', 'snt juliana', 'uberaba', 'uberlândia', 'uberlandia']
+cidade_10 = ['alto araguaia', 'alto garças', 'anápolis', 'anapolis', 'aracajú', 'araxá', 'arcos', 'bambuí', 'bom despacho - trevo', 'br estalagem', 'br posto java - trevo', 'campo belo', 'campos altos - trevo', 'cana verde', 'candeias', 'catalão', 'cristais', 'cuiabá', 'divinópolis', 'divinopolis', 'estalagem', 'feira de santana', 'formiga', 'goiânia - gontijo', 'goiania - gontijo', 'iguatama', 'itumbiara', 'jaciara', 'jataí', 'jequié', 'joão pessoa', 'joao pessoa', 'luz - trevo', 'mineiros', 'nova ponte - trevo', 'nova serrana - gontijo', 'oliveira', 'perdões', 'perdoes', 'posto java - trevo', 'rio verde', 'rondonópolis', 'rondonopolis', 'santa juliana - trevo', 'snt juliana', 'uberaba', 'uberlândia - gontijo', 'porto velho - conexão']
 #
 # VIAÇÃO PARAIBUNA:
 #
@@ -98,29 +98,33 @@ cidade_11 = ['alto jequitibá', 'alvorada de minas', 'argirita', 'bom jesus da c
 #
 # VIAÇÃO UNIÃO:
 #
-cidade_12 = ['alto paraíso de goiás', 'araguari', 'arraias', 'belém', 'bocaiúva', 'buenópolis', 'caldas novas', 'campos belos', 'conceição do tocantins', 'corinto', 'curvelo', 'goiânia', 'janaúba', 'jaraguá', 'jaragua', 'lages', 'mafra', 'maringá', 'medina', 'monte alegre de goiás', 'monte carmelo', 'montes claros', 'natividade', 'palmas', 'paracatu','paracatú', 'patos de minas', 'patrocínio', 'piracanjuba', 'pirapora', 'planaltina', 'porangatu', 'porto nacional', 'rialma', 'santa rosa do tocantins', 'santo ângelo', 'são gabriel', 'são joão daliança', 'são joão da aliança', 'sao joao da aliança', 'são luiz gonzaga', 'sete lagoas', 'silvanópolis', 'três marias', '3 marias', 'tres marias',  'unaí', 'uruaçú']
+cidade_12 = ['alto paraíso de goiás', 'araguari', 'arraias', 'belém', 'bocaiúva', 'buenópolis', 'caldas novas', 'campos belos', 'conceição do tocantins', 'corinto', 'curvelo', 'goiânia - expresso união', 'goiania - expresso união', 'janaúba', 'jaraguá', 'jaragua', 'lages', 'mafra', 'maringá', 'medina', 'monte alegre de goiás', 'monte carmelo', 'montes claros', 'natividade', 'nova serrana - união', 'palmas', 'paracatu','paracatú', 'patos de minas', 'patrocínio', 'piracanjuba', 'pirapora', 'planaltina', 'porangatu', 'porto nacional', 'rialma', 'santa rosa do tocantins', 'santo ângelo', 'são gabriel', 'são joão daliança', 'são joão da aliança', 'sao joao da aliança', 'são luiz gonzaga', 'sete lagoas', 'silvanópolis', 'três marias', '3 marias', 'tres marias',  'unaí', 'uruaçú', 'uberlândia - união']
 #
 # VIAÇÃO UNICA:
 #
-cidade_13 = ['areal', 'búzios - conexão', 'buzios - conexão', 'cabo frio', 'itaipava', 'nova friburgo', 'nova iguaçú', 'petrópolis', 'rio bonito', 'são pedro da aldeia']
+cidade_13 = ['areal', 'búzios - conexão', 'buzios - conexão', 'cabo frio - unica facil', 'itaipava', 'nova friburgo', 'nova iguaçú', 'petrópolis - viação unica', 'petropolis - viação unica', 'rio bonito', 'são pedro da aldeia - unica facil', 'sao pedro da aldeia - unica facil']
 #
 # VIAÇÃO JOSÉ MARIA RODRIGUES:
 #
-cidade_14 = ['aeroporto - conexão', 'astolfo dutra', 'bicas-conexão', 'campestre', 'coronel pacheco', 'dona euzébia', 'dona euzebia', 'goianá', 'goiana', 'guarani', 'guaraní', 'joão ferreira', 'joao ferreira', 'piau', 'piraúba', 'pirauba', 'rio novo', 'sobral pinto', 'toledos', 'triqueda']
+cidade_14 = ['aeroporto - "jmr"', 'astolfo dutra', 'campestre', 'coronel pacheco', 'dona euzébia', 'dona euzebia', 'goianá', 'goiana', 'guarani', 'guaraní', 'joão ferreira', 'joao ferreira', 'piau', 'piraúba', 'pirauba', 'rio novo', 'sobral pinto', 'toledos', 'triqueda']
 #
 # VIAÇÃO ÀGUIA BRANCA:
 #
-cidade_15 = ['foz do iguaçú', 'foz do iguaçu', 'foz do iguacu', 'são josé dos campos', 'sao jose dos campos', '*taubaté', '*taubate']
+cidade_15 = ['foz do iguaçú', 'foz do iguaçu', 'foz do iguacu', 'são josé dos campos - aguia branca', 'sao jose dos campos - aguia branca', 'taubaté - aguia branca', 'são paulo - "aguia branca"', 'sao paulo - "tietê"', 'são paulo - "tietê"', 'sao bernardo do campo - "aguia branca"', 'são bernardo do campo - "aguia branca"',]
 #
 # VIAÇÃO ITAPEMIRIM:
 #
-cidade_16 = ['*aracaju', 'aracaju', '*aracajú', '*aracaju', '*belo horizonte', '*bh', 'campina grande', '*curitiba', '*feira de santana', '*fds', '*guarapari', '*guaraparí', '*ipatinga', '*nanuque', 'rio de janeiro - conexão' , 'salvador', 'são paulo - conexão', '*sao paulo', '*sp', '*vitória da conquista', '*vitoria da conquista', '*vdc']
+cidade_16 = ['*aracaju', 'aracaju', '*aracajú', '*aracaju', 'belo horizonte - "itapemirim"', 'campina grande', '*curitiba', '*feira de santana', '*guarapari', '*guaraparí', '*ipatinga', '*nanuque', 'rio de janeiro - itapemirim' , 'salvador', 'são paulo - itapemirim', 'sao paulo - itapemirim', '*vitória da conquista', '*vitoria da conquista']
+#
+# VIAÇÃO brasil bus:
+#
+cidade_17 = ['petrópolis - "brasil bus"', 'petropolis - "brasil bus"', 'magé', 'são pedro da aldeia - "brasil bus"', 'sao pedro da aldeia - "brasil bus"', 'cabo frio - "brasil bus"']
 #
 # LISTA DE CIDADES POR TARIFAS:
 #
 # Referente ao valor da tarifa de R$0,85
 #
-tarifa_1 = ['aeroporto', 'aeroporto - conexão', 'goianá', 'goiana', 'goianá - conexão', 'goiana - conexão', 'conceição do rio verde', 'conceicao do rio verde', 'conceiçao do rio verde', 'coronel pacheco', 'coronel pacheco - conexão', 'ewbank da câmara', 'ewbank da camara', 'ewbank', 'eubank da camara', 'ferreira lage', 'joão ferreira', 'joao ferreira', 'joao ferreira - conexão', 'joão ferreira - conexão', 'matias barbosa', '*matias barbosa', 'monte verde', '*monte verde', 'passo da pátria', 'passo da patria', 'santa bárbara', 'snt bárbara', 'santa barbara', 'são roque de minas', 'sao roque de minas', 'senador cortês', 'senador cortes', 'triqueda', 'valadares'] 
+tarifa_1 = ['aeroporto - "bassamar"', 'aeroporto - "jmr"', 'goianá', 'goiana', 'goianá - conexão', 'goiana - conexão', 'conceição do rio verde', 'conceicao do rio verde', 'conceiçao do rio verde', 'coronel pacheco', 'coronel pacheco - conexão', 'ewbank da câmara', 'ewbank da camara', 'ewbank', 'eubank da camara', 'ferreira lage', 'joão ferreira', 'joao ferreira', 'joao ferreira - conexão', 'joão ferreira - conexão', 'matias barbosa', '*matias barbosa', 'monte verde', '*monte verde', 'passo da pátria', 'passo da patria', 'santa bárbara', 'snt bárbara', 'santa barbara', 'são roque de minas', 'sao roque de minas', 'senador cortês', 'senador cortes', 'triqueda', 'valadares'] 
 #
 # Referente ao valor da tarifa de R$1,45
 #
@@ -128,15 +132,15 @@ tarifa_2 = ['afonso arinos', 'bela vista de minas', 'bias fortes', 'bicas', 'bic
 #
 # Referente ao valor da tarifa de R$2,55
 #
-tarifa_3 = ['além paraíba', 'alem paraiba', 'além paraiba', 'alem paraíba', 'acampamento de campelina', 'alto jequitibá', 'alto jequitiba', 'alvorada de minas', 'argirita', 'argirita - conexão', 'astolfo dutra', 'barbacena', 'barroso', 'bom jesus da cachoeira', 'caieiro', 'campestre', 'carandaí', 'carandai', 'coimbra', 'ubá', 'uba', 'visconde do rio branco', 'cataguases', 'conceição do monte alegre', 'conceicao do monte alegre', '*conceição do monte alegre', '*conceicao do monte alegre', 'conservatória', 'conservatoria', 'descoberto', 'dona euzébia', 'dores de campos', 'ervália', 'ervalia', 'fortaleza de minas', 'helvas', 'ibertioga', 'itaipava', 'laranjal', 'levy gasparian', 'madre de deus', 'manoel duarte', 'mercês', 'merces', 'minduri', 'mindurí', 'miguel pereira', '*miguel pereira', 'nova friburgo', 'nova iguaçú', 'nova iguaçu', 'paraíba do sul', 'paraiba do sul', 'pds', 'petrópolis', 'petropolis', 'pirapitinga', 'piraúba', 'pirauba', 'prados', 'ressaquinha', 'rio das flores', 'rio preto', 'santana do deserto', 'são pedro da aldeia', 'sao pedro da aldeia', 'são sebastião da vitória', 'sao sebastiao da vitoria', 'senador firmino', 'serra bocaina', 'serra bocaina - conexão', 'sobral pinto', 'tebas - conexão', 'tebas', 'tiradentes', 'tocantins', 'toledos', 'três ilhas', 'tres ilhas', '3 ilhas', 'três rios',  'tres rios', '3 rios', 'vale sobrado', 'valença', 'vassouras', 'visconde do rio branco'] 
+tarifa_3 = ['além paraíba', 'alem paraiba', 'além paraiba', 'alem paraíba', 'acampamento de campelina', 'alto jequitibá', 'alto jequitiba', 'alvorada de minas', 'argirita', 'argirita - conexão', 'astolfo dutra', 'barbacena', 'barroso', 'bom jesus da cachoeira', 'caieiro', 'campestre', 'carandaí', 'carandai', 'coimbra', 'ubá', 'uba', 'visconde do rio branco', 'cataguases', 'conceição do monte alegre', 'conceicao do monte alegre', '*conceição do monte alegre', '*conceicao do monte alegre', 'conservatória', 'conservatoria', 'descoberto', 'dona euzébia', 'dores de campos', 'ervália', 'ervalia', 'fortaleza de minas', 'helvas', 'ibertioga', 'itaipava', 'laranjal', 'levy gasparian', 'madre de deus', 'manoel duarte', 'mercês', 'merces', 'minduri', 'mindurí', 'miguel pereira', '*miguel pereira', 'nova friburgo', 'nova iguaçú', 'nova iguaçu', 'paraíba do sul', 'paraiba do sul', 'petrópolis - viação unica', 'petropolis - viação unica', 'petrópolis - "brasil bus"', 'petropolis - "brasil bus"', 'pirapitinga', 'piraúba', 'pirauba', 'prados', 'ressaquinha', 'rio das flores', 'rio preto', 'santana do deserto', 'são pedro da aldeia - unica facil', 'sao pedro da aldeia - unica facil', 'são pedro da aldeia - "brasil bus"', 'sao pedro da aldeia - "brasil bus"', 'são sebastião da vitória', 'sao sebastiao da vitoria', 'senador firmino', 'serra bocaina', 'serra bocaina - conexão', 'sobral pinto', 'tebas - conexão', 'tebas', 'tiradentes', 'tocantins', 'toledos', 'três ilhas', 'tres ilhas', '3 ilhas', 'três rios',  'tres rios', '3 rios', 'vale sobrado', 'valença', 'vassouras', 'visconde do rio branco'] 
 #
 # Referente ao valor da tarifa de R$5,25
 #
-tarifa_4 = ['alegrete', 'aiuruoca', 'almenara', 'alfenas', '*alfenas', 'alto araguaia', 'alto garças', 'alto garcas', 'águas pretas', 'aguas pretas', 'águas de lindóia', 'aguas de lindoia', 'alto paraíso de goiás', 'alto paraiso de goias', 'americana', '*americana', 'anápolis', 'andradas', 'andrelândia', 'angra dos reis', 'aparecida do norte', 'aracajú', '*aracajú', '*aracaju', 'araçuaí', 'araguari', 'arantina', 'araraquara', '*araraquara', 'araxá', 'arcos', 'areal', 'arraias', 'baependi', 'bambuí', 'bananal', 'barra do piraí', 'barra mansa', 'belém', 'belo horizonte','*belo horizonte', '*bh', 'bh', 'betim', 'bicas-trevo', 'bicuíba', 'bicuiba', 'bocaiúva', 'bocaiuva', 'bom despacho', 'bom jesus do itabapoana', 'bragança paulista', '*bragança paulista', '*braganca paulista', 'brasilia', 'brasília', 'buenópolis', 'buenopolis', 'búzios - conexão', 'buzios - conexão', 'cabo frio', 'cachoeiro de itapemirim', 'cachoeiro de itapemirim', 'caldas novas', 'camacã', 'camacan', 'cambuquira', 'campanario', 'campanário', 'campinas', '*campinas', 'campina grande', 'campo belo', 'campos dos goytacazes', 'cdg', 'campos goytacazes', 'campos altos', 'campos belos', 'campo mourão', 'campo mourao', 'cana verde', 'candeias', 'caparaó divino', 'caparao divino', 'carangola', 'caratinga', 'carlos chagas', 'carvalhos', 'catalao', 'catalão', 'catanduvas', '*catanduvas', 'caxambú', 'caxias', 'conceição do tocantins', 'conceicao do tocantins','cdt', 'congonhas', 'conselheiro lafayete', 'contagem', 'corinto', 'coronel fabriciano', 'cruzilia', 'cruzília',  'cuiabá', 'cuiaba', 'curitiba', '*curitiba', 'curvelo', 'divinópolis', 'divinopolis', 'dom cavate', 'engenheiro caldas', 'eng caldas', 'espera feliz', 'estalagem', 'eunápolis', 'eunapolis', 'extrema', 'cristais', 'feira de santana', '*feira de santana', 'felisburgo', 'fervedouro', 'florianópolis', 'florianopolis', 'formiga', 'foz do iguaçu', 'foz do iguaçú', 'foz do iguacu', 'frei inocêncio', 'frei inocencio', 'goiania', 'goiânia', 'governador valadares', 'guarapari', 'guaraparí', '*guaraparí', '*guarapari', 'guaxupé', 'guaxupe',  'gurupi', 'guarupí', 'iguatama', 'ilhéus', 'ilheus', 'ipatinga', '*ipatinga', 'imperatriz', 'inhapim', 'itabacuri', 'itabacurí', 'itabira', 'itabuna', 'itagimirim', 'itamaraju', 'itambé', 'itaobim', 'itaoca', 'itaperuna', 'itaúna', 'itauna', 'itumbiara', 'itutinga', 'jacareí', 'jacarei', 'jaciara', 'janaúba', 'janauba', 'jaraguá', 'jaragua', 'jataí', 'jatai', 'jequié', 'jequie', 'jequitinhonha', 'joão molevade', 'joao molevade', 'joão pessoa', 'joao pessoa', 'joinvile', 'jundiaí', 'jundiai', 'lages', 'lambari', 'lambarí', 'lavras', 'leopoldina', 'leopoldina - conexão', 'leopoldina - conexão_2','liberdade', '*liberdade', 'londrina', 'macaé', 'macae', 'madureira', 'mafra', 'manhuaçu', '*manhuaçu', 'manhuacu', '*manhuacu', 'manhumirim', 'marataizes', 'mariana', 'maringá', 'medianeira', 'medina', 'mineiros', 'miracema', 'miradouro', 'miraí', 'mirai', 'mogi mirim', 'mogi das cruzes', 'mogi guaçu', 'mogi guaçú', 'monte alegre de goiás', 'monte alegre de goias', 'monte carmelo', 'monte pascoal', 'montes claros', 'muriaé', 'muriae', 'nanuque', '*nanuque', 'natal', 'natividade', 'niterói', 'niteroi', 'nova era', 'nova ponte', 'nova serrana', 'novo cruzeiro', 'oliveira', 'ourinhos', 'ouro branco', 'ouro preto', 'orizânia', 'orizania', 'palmas', 'paracatu' 'paracatú', 'pará de minas', 'pará de minas', 'parati', 'parque nacional caparaó', 'parque nacional caparao', 'passa quatro', ' passa 4', 'patos de minas', 'patrocínio', 'patrocinio', 'pedra azul', 'perdões', 'perdoes', 'pernambuco', 'piracanjuba', 'piracicaba', '*piracicaba', 'pirapora', 'pirassununga', '*pirassununga', 'piúma', 'piuma', 'planaltina', 'poços de caldas', 'ponte nova', 'porangatu', 'porangatú', 'porto alegre',  'porto firme', 'porto nacional', 'posto da mata', 'pouso alegre', 'raposo', 'realeza', 'recreio', 'resende', 'rialma', 'ribeirão preto', '*ribeirão preto','ribeirao preto', '*ribeirao preto', 'rio bonito', 'rio casca', 'rio das ostras - próximo secretaria de turismo', 'rio de janeiro', 'rio de janeiro - conexão', 'rj', 'rio do prado', 'rio verde', 'rondonópolis', 'rondonopolis', 'santa bárbara do leste', 'santa clara', 'snt clara', 'santa juliana', 'snt juliana', 'santa rita de jacutinga', 'snt rita de jacutinga', 'santa rosa do tocantins', 'santo andré', 'santo andre', 'santo ângelo', 'santo angelo', 'santos', 'são bernardo do campo', 'sao bernanrdo do campo', 'são caetano', 'sao caetano' 'são carlos', '*são carlos', 'são domingos do prata', 'são gabriel', 'são geraldo', 'são gonçalo do sapucaia', 'são joão daliança', 'são joão del rei', 'são josé do rio preto', 'são joão do rio preto', 'são josé dos campos', 'são lourenço', 'são luiz gonzaga', 'slg', 'sp', 'são paulo', 'sao paulo', '*são paulo', '*sao paulo', '*sp', 'são tomé das letras', 'sao tome das letras', 'são vicente de minas', 'sao vicente de minas', 'seritinga', 'serraria', 'sete lagoas', 'silvanópolis', 'silvanopolis', 'sorocaba', 'taubaté', 'taubate', '*taubaté', 'teixeiras', 'teófilo otoni', 'teofilo otoni', 'timóteo', 'timoteo', 'torres', 'três corações', 'tres coraçoes', 'tres coracoes', '3 coraçoes', '3 coracoes', 'três marias', 'tres marias', '3 marias', 'uberaba', 'uberlândia', 'uberlandia', 'unaí', 'unai', 'uruaçu', 'uruaçú', 'vargem grande', 'varginha', 'viçosa', 'vicosa', 'vila velha', 'virgem da lapa', 'vitória', 'vitória da conquista', 'vitoria da conquista', '*vitória da conquista', '*vitoria da conquista', 'volta redonda']
+tarifa_4 = ['alegrete', 'aiuruoca', 'almenara', 'alfenas', '*alfenas', 'alto araguaia', 'alto garças', 'alto garcas', 'águas pretas', 'aguas pretas', 'águas de lindóia', 'aguas de lindoia', 'alto paraíso de goiás', 'alto paraiso de goias', 'americana', '*americana', 'anápolis', 'andradas', 'andrelândia', 'angra dos reis', 'aparecida do norte', 'aracajú', '*aracajú', '*aracaju', 'araçuaí', 'araguari', 'arantina', 'araraquara', '*araraquara', 'araxá', 'arcos', 'areal', 'arraias', 'baependi', 'bambuí', 'bananal', 'barra do piraí', 'barra mansa', 'belém', 'belo horizonte', 'belo horizonte - "itapemirim"', 'betim', 'bicas-trevo', 'bicuíba', 'bicuiba', 'bocaiúva', 'bocaiuva', 'bom despacho - trevo', 'bom jesus do itabapoana', 'bragança paulista', '*bragança paulista', '*braganca paulista', 'brasilia', 'brasília', 'buenópolis', 'buenopolis', 'búzios - conexão', 'buzios - conexão', 'cabo frio - unica facil', 'cabo frio - "brasil bus"', 'cachoeiro de itapemirim', 'caldas novas', 'camacã', 'camacan', 'cambuquira', 'campanario', 'campanário', 'campinas', '*campinas', 'campina grande', 'campo belo', 'campos dos goytacazes', 'cdg', 'campos goytacazes', 'campos altos - trevo', 'campos belos', 'campo mourão', 'campo mourao', 'cana verde', 'candeias', 'caparaó divino', 'caparao divino', 'carangola', 'caratinga', 'carlos chagas', 'carvalhos', 'catalao', 'catalão', 'catanduvas', '*catanduvas', 'caxambú', 'caxias', 'conceição do tocantins', 'conceicao do tocantins','cdt', 'congonhas', 'conselheiro lafayete', 'contagem', 'corinto', 'coronel fabriciano', 'cruzilia', 'cruzília',  'cuiabá', 'cuiaba', 'curitiba', '*curitiba', 'curvelo', 'divinópolis', 'divinopolis', 'dom cavate', 'engenheiro caldas', 'eng caldas', 'espera feliz', 'estalagem', 'eunápolis', 'eunapolis', 'extrema', 'cristais', 'feira de santana', '*feira de santana', 'felisburgo', 'fervedouro', 'florianópolis', 'florianopolis', 'formiga', 'foz do iguaçu', 'foz do iguaçú', 'foz do iguacu', 'frei inocêncio', 'frei inocencio', 'goiânia - "expresso união"', 'goiania - "expresso união"', 'goiânia - "util"', 'goiania - "util"', 'goiânia - "gontijo"', 'goiania - "gontijo"', 'governador valadares', 'guarapari', 'guaraparí', '*guaraparí', '*guarapari', 'guaxupé', 'guaxupe',  'gurupi', 'guarupí', 'iguatama', 'ilhéus', 'ilheus', 'ipatinga', '*ipatinga', 'imperatriz', 'inhapim', 'itabacuri', 'itabacurí', 'itabira', 'itabuna', 'itagimirim', 'itamaraju', 'itambé', 'itaobim', 'itaoca', 'itaperuna', 'itaúna', 'itauna', 'itumbiara', 'itutinga', 'jacareí', 'jacarei', 'jaciara', 'janaúba', 'janauba', 'jaraguá', 'jaragua', 'jataí', 'jatai', 'jequié', 'jequie', 'jequitinhonha', 'joão molevade', 'joao molevade', 'joão pessoa', 'joao pessoa', 'joinvile', 'jundiaí', 'jundiai', 'lages', 'lambari', 'lambarí', 'lavras', 'leopoldina', 'leopoldina - conexão', 'leopoldina - conexão_2','liberdade', '*liberdade', 'londrina', 'macaé', 'macae', 'madureira', 'mafra', 'manhuaçu', '*manhuaçu', 'manhuacu', '*manhuacu', 'manhumirim', 'marataizes', 'mariana', 'maringá', 'medianeira', 'medina', 'mineiros', 'miracema', 'miradouro', 'miraí', 'mirai', 'mogi mirim', 'mogi das cruzes', 'mogi guaçu', 'mogi guaçú', 'monte alegre de goiás', 'monte alegre de goias', 'monte carmelo', 'monte pascoal', 'montes claros', 'muriaé', 'muriae', 'nanuque', '*nanuque', 'natal', 'natividade', 'niterói', 'niteroi', 'nova era', 'nova ponte - trevo', 'nova serrana - gontijo', 'nova serrana - união', 'novo cruzeiro', 'oliveira', 'ourinhos', 'ouro branco', 'ouro preto', 'orizânia', 'orizania', 'palmas', 'paracatu' 'paracatú', 'pará de minas', 'pará de minas', 'parati', 'parque nacional caparaó', 'parque nacional caparao', 'passa quatro', 'passa 4', 'patos de minas', 'patrocínio', 'patrocinio', 'pedra azul', 'perdões', 'perdoes', 'pernambuco', 'piracanjuba', 'piracicaba', '*piracicaba', 'pirapora', 'pirassununga', '*pirassununga', 'piúma', 'piuma', 'planaltina', 'poços de caldas', 'ponte nova', 'porangatu', 'porangatú', 'porto alegre',  'porto firme', 'porto nacional', 'posto da mata', 'pouso alegre', 'raposo', 'realeza', 'recreio', 'resende', 'rialma', 'ribeirão preto', '*ribeirão preto','ribeirao preto', '*ribeirao preto', 'rio bonito', 'rio casca', 'rio das ostras - próximo secretaria de turismo', 'rio de janeiro', 'rio de janeiro - conexão', 'rio do prado', 'rio verde', 'rondonópolis', 'rondonopolis', 'santa bárbara do leste', 'santa clara', 'snt clara', 'santa juliana - trevo', 'snt juliana', 'santa rita de jacutinga', 'snt rita de jacutinga', 'santa rosa do tocantins', 'santo andré', 'santo andre', 'santo ângelo', 'santo angelo', 'santos', 'são bernardo do campo', 'sao bernardo do campo', 'sao bernardo do campo - "aguia branca"', 'são bernardo do campo - "aguia branca"', 'são caetano', 'sao caetano', 'são carlos', '*são carlos', 'são domingos do prata', 'são gabriel', 'são geraldo', 'são gonçalo do sapucaia', 'são joão daliança', 'são joão del rei', 'são josé do rio preto', 'são joão do rio preto', 'são josé dos campos', 'são lourenço', 'são luiz gonzaga', 'são paulo', 'sao paulo', 'são paulo - "itapemirim"', 'sao paulo - "itapemirim"', 'são tomé das letras', 'sao tome das letras', 'são vicente de minas', 'sao vicente de minas', 'seritinga', 'serraria', 'sete lagoas', 'silvanópolis', 'silvanopolis', 'sorocaba', 'taubaté', 'taubate', 'taubaté - aguia branca', 'teixeiras', 'teófilo otoni', 'teofilo otoni', 'timóteo', 'timoteo', 'torres', 'três corações', 'tres coraçoes', 'tres coracoes', '3 coraçoes', '3 coracoes', 'três marias', 'tres marias', '3 marias', 'uberaba', 'uberlândia - gontijo', 'uberlândia - união', 'unaí', 'unai', 'uruaçu', 'uruaçú', 'vargem grande', 'varginha', 'viçosa', 'vicosa', 'vila velha', 'virgem da lapa', 'vitória', 'vitória da conquista', 'vitoria da conquista', '*vitória da conquista', '*vitoria da conquista', 'volta redonda', 'br estalagem', 'br posto java - trevo', 'porto velho - conexão', 'luz - trevo', 'posto java - trevo', 'magé', 'são josé dos campos - "util"', 'sao jose dos campos - "util"', 'são josé dos campos - aguia branca', 'sao jose dos campos - aguia branca', 'são paulo - "aguia branca"', 'sao paulo - "tietê"', 'são paulo - "tietê"', 'são paulo - "cometa"', 'sao paulo - cometa']
 #
 #LISTA_GERAL:
 #
-lista_geral = ['inss', 'previdencia', 'previdência', 'previdência social', 'conselho tutelar',  'juizado de menores' , 'juizado menores', 'smu', 'antt', 'guarda municipal', 'gm', 'cargas util', 'util cargas', 'encomendas ceu', 'ceu encomendas', 'ceu', 'andré', 'andre', 'André', 'Andre', 'cargas resendense', 'resendense cargas', 'resendense', 'edimar despachante', 'despachante',  'migração', 'centro pop', 'centropop', 'balcão', 'balcao' , 'amd', 'amd balcão', 'rodoviaria', 'rodoviária', 'amd services', 'adm', 'secrretaria', 'diretoria', 'mensalista', 'estacionamento', 'estacionamento pago', 'estacionamento mensalista', 'rei do mate', 'rm', 'cacaushow', 'cs', 'cacau', 'chocolateria', 'emporio rural', 'empório rural', 'emporio', 'empório', 'rural', 'bomboniere', 'vitoria', 'vitória', 'bombonier', 'pastelaria', 'princesa dos pastéis', 'côrrea', 'lanchonete', 'santa lúcia', 'lanchonete santa lúcia', 'santalucia', 'snt lucia', 'farmácia', 'farmacia', 'poderosa', 'poderosa presentes', 'poderosa loja', 'poderosapresentes', 'belinha', 'eletrônicos', 'belinha eletrônicos', 'eletronicos', 'padaria', 'estação mineira', 'estacao mineira', 'box100', 'box 100', 'box', 'center tour', 'centertour', 'centertur', 'center tur', 'p1', 'p01', 'p 1', 'p 01', 'p2', 'p02', 'p 2', 'p 02', 'p3', 'p03', 'p 3', 'p 03', 'p4', 'p04', 'p 4', 'p 04', 'p5', 'p05', 'p 5', 'p 05', 'p6', 'p06', 'p 6', 'p 06', 'p7', 'p07', 'p 7', 'p 07','p8', 'p08', 'p 8', 'p 08', 'p9', 'p09', 'p 9', 'p 09', 'p1', 'p01', 'p 1', 'alfa1', 'alfa 01', 'alfa1', 'alpha1', 'alpha 1', 'alfa2', 'alfa 02', 'alfa2', 'alpha2', 'alpha 2', 'alfa3', 'alfa 03', 'alfa3', 'alpha3', 'alpha 3', 'alfa4', 'alfa 04', 'alfa4', 'alpha4', 'alpha 4', 'alfa5', 'alfa 05', 'alfa5', 'alpha5', 'alpha 5', 'alfa1', 'alfa 06', 'alfa6', 'alpha6', 'alpha 6', 'alfa7', 'alfa 7', 'alfa7', 'alpha7', 'alpha 7', 'alfa8', 'alfa 08', 'alfa8', 'alpha8', 'alpha 8', 'alfa9', 'alfa 09', 'alfa9', 'alpha9', 'alpha 9', 'alfa10', 'alfa 10', 'alfa10', 'alpha10', 'alpha 10', 'alfa11', 'alfa 11', 'alfa11', 'alpha11', 'alpha 11', 'saritur', 'coordenadas', 'atual', 'util', 'brisa', 'guanabara', 'sampaio', 'gypsyy', 'cometa', 'catarinense', 'expresso do sul', 'expressodosul', '1001', 'progresso', 'viaçãoprogresso', 'viacao progresso', 'viaçao progresso', 'unida', 'viação unida', 'viaçãounida', 'unidamansur', 'unida manssur', 'transur', 'viação transur', 'bassamar', 'viacao bassamar', 'riodoce', 'rio doce', 'viação rio doce', 'santa cruz', 'snt cruz', 'sntcruz', 'santacruz', 'sulminas', 'sul minas', 'gontijo', 'viação gontijo', 'viacao gontijo', 'paraibuna', 'viação paraibuna', 'viação união', 'união', 'uniao', 'expresso união', 'pluma', 'viação pluma', 'viação unica', 'unica', 'unica fácil', 'unica facil', 'unicafacil', 'josé maria rodrigues', 'jmr', 'jose maria rodrigues', 'josemariarodrigues', 'águiabranca', 'águia branca', 'aguia branca', 'águiabranca', 'roderotas', 'rode rotas', 'itapemirim', 'viação itapemirim', 'kaissara', 'viação kaissara', 'brasilbus', 'brasil bus',]
+lista_geral = ['inss', 'previdencia', 'previdência', 'previdência social', 'conselho tutelar',  'juizado de menores' , 'juizado menores', 'smu', 'antt', 'guarda municipal', 'gm', 'cargas util', 'util cargas', 'encomendas ceu', 'ceu encomendas', 'ceu', 'andré', 'andre', 'André', 'Andre', 'cargas resendense', 'resendense cargas', 'resendense', 'edimar despachante', 'despachante',  'migração', 'centro pop', 'centropop', 'balcão', 'balcao' , 'amd', 'amd balcão', 'rodoviaria', 'rodoviária', 'amd services', 'adm', 'secrretaria', 'diretoria', 'mensalista', 'estacionamento', 'estacionamento pago', 'estacionamento mensalista', 'rei do mate', 'rm', 'cacaushow', 'cs', 'cacau', 'chocolateria', 'emporio rural', 'empório rural', 'emporio', 'empório', 'rural', 'bomboniere', 'vitoria', 'vitória', 'bombonier', 'pastelaria', 'princesa dos pastéis', 'côrrea', 'lanchonete', 'santa lúcia', 'lanchonete santa lúcia', 'santalucia', 'snt lucia', 'farmácia', 'farmacia', 'poderosa', 'poderosa presentes', 'poderosa loja', 'poderosapresentes', 'belinha', 'eletrônicos', 'belinha eletrônicos', 'eletronicos', 'padaria', 'estação mineira', 'estacao mineira', 'box100', 'box 100', 'box', 'center tour', 'centertour', 'centertur', 'center tur', 'p1', 'p01', 'p 1', 'p 01', 'p2', 'p02', 'p 2', 'p 02', 'p3', 'p03', 'p 3', 'p 03', 'p4', 'p04', 'p 4', 'p 04', 'p5', 'p05', 'p 5', 'p 05', 'p6', 'p06', 'p 6', 'p 06', 'p7', 'p07', 'p 7', 'p 07','p8', 'p08', 'p 8', 'p 08', 'p9', 'p09', 'p 9', 'p 09', 'p1', 'p01', 'p 1', 'alfa1', 'alfa 01', 'alfa1', 'alpha1', 'alpha 1', 'alfa2', 'alfa 02', 'alfa2', 'alpha2', 'alpha 2', 'alfa3', 'alfa 03', 'alfa3', 'alpha3', 'alpha 3', 'alfa4', 'alfa 04', 'alfa4', 'alpha4', 'alpha 4', 'alfa5', 'alfa 05', 'alfa5', 'alpha5', 'alpha 5', 'alfa1', 'alfa 06', 'alfa6', 'alpha6', 'alpha 6', 'alfa7', 'alfa 7', 'alfa7', 'alpha7', 'alpha 7', 'alfa8', 'alfa 08', 'alfa8', 'alpha8', 'alpha 8', 'alfa9', 'alfa 09', 'alfa9', 'alpha9', 'alpha 9', 'alfa10', 'alfa 10', 'alfa10', 'alpha10', 'alpha 10', 'alfa11', 'alfa 11', 'alfa11', 'alpha11', 'alpha 11', 'saritur', 'coordenadas', 'atual', 'util', 'brisa', 'guanabara', 'sampaio', 'gypsyy', 'cometa', 'catarinense', 'expresso do sul', 'expressodosul', '1001', 'progresso', 'viaçãoprogresso', 'viacao progresso', 'viaçao progresso', 'unida', 'viação unida', 'viaçãounida', 'unidamansur', 'unida manssur', 'transur', 'viação transur', 'bassamar', 'viacao bassamar', 'riodoce', 'rio doce', 'viação rio doce', 'santa cruz', 'snt cruz', 'sntcruz', 'santacruz', 'sulminas', 'sul minas', 'gontijo', 'viação gontijo', 'viacao gontijo', 'paraibuna', 'viação paraibuna', 'viação união', 'união', 'uniao', 'expresso união', 'pluma', 'viação pluma', 'viação unica', 'unica', 'unica fácil', 'unica facil', 'unicafacil', 'josé maria rodrigues', 'jmr', 'jose maria rodrigues', 'josemariarodrigues', 'águiabranca', 'águia branca', 'aguia branca', 'águiabranca', 'roderotas', 'rode rotas', 'itapemirim', 'viação itapemirim', 'kaissara', 'viação kaissara', 'brasilbus', '"brasil bus"',]
 #
 #
 #
@@ -148,7 +152,7 @@ class MainApp(App):
         layout = BoxLayout(orientation='vertical', padding=10, spacing=10)
         
         title = Label(
-            text="\\\/// AMD BUSCA \\\///",
+            text="\\\*/// AMD BUSCA \\\*///",
             font_size=24,
             size_hint_y=None,
             height=30,
@@ -157,7 +161,7 @@ class MainApp(App):
         layout.add_widget(title)
         
         self.input = TextInput(
-            hint_text="PESQUISAR POR: (OUTROS RESULTADOS PARA A MESMA CIDADE, INSIRA * ANTES DO NOME)",
+            hint_text="PESQUISAR POR: (RESULTADOS PARA A MESMA CIDADE, ESCREVA O NOME COMPLETO)",
             font_size=18,
             size_hint_y=None,
             height=40
@@ -198,7 +202,7 @@ class MainApp(App):
     def get_combined_cidades(self):
         return (
             cidade_1 + cidade_2 + cidade_3 + cidade_4 + cidade_5 + cidade_6 + cidade_7 +
-            cidade_9 + cidade_10 + cidade_11 + cidade_12 + cidade_13 + cidade_14 + cidade_15 + cidade_16 + lista_geral
+            cidade_9 + cidade_10 + cidade_11 + cidade_12 + cidade_13 + cidade_14 + cidade_15 + cidade_16 + cidade_17 + lista_geral
         )
     def update_suggestions(self, instance, value):
         self.suggestions_grid.clear_widgets()
@@ -227,6 +231,10 @@ class MainApp(App):
     def pesquisar(self, instance):
         nome  = self.input.text.lower()
         resultado = "-=-=-=-=-=-=-= DESCONHECIDO -=-=-=-=-=-=-=-=-\n\n> CONFIRA O NOME PESQUISADO, E TENTE NOVAMENTE!\n> POSSIBILIDADE DE NÃO CONSTAR NESSE BANCO DE DADOS!\n> CLIQUE EM LIMPAR PARA UMA NOVA PESQUISA!"
+        #
+        #
+        # COORDENADAS / ATUAL:
+        #
         if nome in cidade_1 and nome  in tarifa_3:
             resultado = (
                 '=-=-=- EMPRESA: VIAÇÃO COORDENADAS - ATUAL =-=-=-\n\n'
@@ -237,6 +245,10 @@ class MainApp(App):
                 'PLATAFORMA: 22\n\n'
 				'TARIFA DE EMBARQUE R$2,55'
             )
+        #
+        #
+        # COORDENADAS / ATUAL:
+        #
         elif nome  in cidade_1 and nome  in tarifa_4:
             resultado = (
                 '=-=-=- EMPRESA: VIAÇÃO COORDENADAS - ATUAL =-=-=-\n\n'
@@ -247,6 +259,10 @@ class MainApp(App):
                 'PLATAFORMA: 22\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
             )
+        #
+        #
+        # UTIL / BRISA / SAMPAIO / GUANABARA / REAL EXPRESSO / RÀPIDO FERDERAL / GYPSYY:
+        #
         elif nome  in cidade_2 and nome  in tarifa_3:
             resultado = (
 				'EMPRESA: VIAÇÃO UTIL / BRISA / SAMPAIO / GYPSYY\nGUANABARA / REAL EXPRESSO / RÁPIDO FEDERAL\n\n'
@@ -254,6 +270,10 @@ class MainApp(App):
 				'UTIL: https://www.util.com.br/\nGUANABARA: https://www.viajeguanabara.com.br/\nSAMPAIO: https://viacaosampaio.com.br/\n\nPLATAFORMAS: 13, 14, e 15\n\n'
                 'TARIFA DE EMBARQUE R$2,55'
             )
+        #
+        #
+        # UTIL / BRISA / SAMPAIO / GUANABARA / REAL EXPRESSO / RÀPIDO FERDERAL / GYPSYY:
+        #
         elif nome  in cidade_2 and nome  in tarifa_4:
             resultado = (
 				'EMPRESA: VIAÇÃO UTIL / BRISA / SAMPAIO / GYPSYY\nGUANABARA / REAL EXPRESSO / RÁPIDO FEDERAL\n\n'
@@ -261,6 +281,10 @@ class MainApp(App):
 				'UTIL: https://www.util.com.br/\nGUANABARA: https://www.viajeguanabara.com.br/\nSAMPAIO: https://viacaosampaio.com.br/\n\nPLATAFORMAS: 13, 14, e 15\n\n'
                 'TARIFA DE EMBARQUE R$5,25'
             )
+        #
+        #
+        # VIAÇÃO COMETA / CATARINENSE / EXPRESSO DO SUL / 1001:
+        #
         elif nome  in cidade_3 and nome  in tarifa_4:
             resultado = (
 				'-=-=-= EMPRESA: VIAÇÃO COMETA / CATARINENSE / EXPRESSO DO SUL / 1001 -=-=-=\n\n' 
@@ -271,6 +295,10 @@ class MainApp(App):
                 'PLATAFORMAS: 10, 11 e 12\n\n'
 			    'TARIFA DE EMBARQUE R$5,25'
 		    )
+        #
+        #
+        # VIAÇÃO PROGRESSO:
+        #
         elif nome  in cidade_4 and nome  in tarifa_1:
             resultado = (
 				'=-=-=- EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30 =-=-=-\n\n' 
@@ -279,6 +307,10 @@ class MainApp(App):
                 'PLATAFORMAS: 25 e 26\n\n' 
                 'TARIFA DE EMBARQUE R$0,85'
 			)
+        #
+        #
+        # VIAÇÃO PROGRESSO:
+        #
         elif nome  in cidade_4 and nome  in tarifa_2:
             resultado = (
 				'=-=-=- EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30 =-=-=-\n\n' 
@@ -287,6 +319,10 @@ class MainApp(App):
                 'FUNCIONAMENTO: seg - sab 06h - 19h45 / dom 06h - 21h\nPLATAFORMAS: 25 e 26\n\n'
                 'TARIFA DE EMBARQUE R$1,45'
 			)
+        #
+        #
+        # VIAÇÃO PROGRESSO:
+        #
         elif nome  in cidade_4 and nome  in tarifa_3:
             resultado= (
 				'=-=-=- EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30 =-=-=-\n\n' 
@@ -297,6 +333,10 @@ class MainApp(App):
 				'PLATAFORMAS: 25 e 26\n\n' 
 				'TARIFA DE EMBARQUE R$2,55'
 			)
+        #
+        #
+        # VIAÇÃO PROGRESSO:
+        #
         elif nome  in cidade_4 and nome  in tarifa_4:
             resultado = (
 				'=-=-=- EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30 =-=-=-\n\n' 
@@ -306,6 +346,10 @@ class MainApp(App):
 				'PLATAFORMAS: 25 e 26\n\n' 
 				'TARIFA DE EMBARQUE R$5,25'
 			)
+		#
+        #
+        # VIAÇÃO UNIDA:
+        #
         elif nome  in cidade_5 and nome  in tarifa_1:
             resultado = (
 				'EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n' 
@@ -314,6 +358,10 @@ class MainApp(App):
                 'PLATAFORMA: 23\n\n'
 			    'TARIFA DE EMBARQUE R$0,85'
 			)
+        #
+        #
+        # VIAÇÃO UNIDA:
+        #
         elif nome  in cidade_5 and nome  in tarifa_2:
             resultado = (
 				'EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n' 
@@ -322,13 +370,22 @@ class MainApp(App):
 				'PLATAFORMA: 23\n\n'
 			    'TARIFA DE EMBARQUE R$1,45'
             )
+        #
+        #
+        # VIAÇÃO UNIDA:
+        #
         elif nome  in cidade_5 and nome  in tarifa_3:
             resultado = (
 				'EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n\nCONTATO: (32) 3215-3427\n' 
 				'SITE: https://unidamansur.queropassagem.com.br\n' 
 				'FUNCIONAMENTO:\nseg - sab 05h15 - 11h30 / 12h30 - 21h30 / 22h30 - 23h\ndom 07h - 11h30 / 12h30 - 21h30 / 22h30 - 23h\n' 
 				'PLATAFORMA: 23\n\n'
-			    'TARIFA DE EMBARQUE R$2,55')
+			    'TARIFA DE EMBARQUE R$2,55'
+			)
+		#
+        #
+        # VIAÇÃO UNIDA:
+        #
         elif nome  in cidade_5 and nome  in tarifa_4:
             resultado = (
 				'EMPRESA: VIAÇÃO UNIDA - GUICHÊS: 17, 18 e 19\n' 
@@ -337,6 +394,10 @@ class MainApp(App):
                 'PLATAFORMA: 23\n\n'
 			    'TARIFA DE EMBARQUE R$5,25'
 			)
+        #
+        #
+        # VIAÇÃO TRANSUR:
+        #
         elif nome  in cidade_6 and nome  in tarifa_2:
             resultado = (
 				'=-=-=- EMPRESA: VIAÇÃO TRANSUR - GUICHÊS: 09 e 10=-=-=-\n\nCONTATO: (32) 3218-3613\n' 
@@ -346,6 +407,10 @@ class MainApp(App):
                 'PLATAFORMA: 17\n\n' 
                 'TARIFA DE EMBARQUE R$1,45'
 			)
+        #
+        #
+        # VIAÇÃO TRANSUR:
+        #
         elif nome  in cidade_6 and nome  in tarifa_3:
             resultado = (
 				'=-=-=- EMPRESA: VIAÇÃO TRANSUR - GUICHÊS: 09 e 10=-=-=-\n\nCONTATO: (32) 3218-3613\n' 
@@ -354,6 +419,10 @@ class MainApp(App):
                 'PLATAFORMA: 17\n\n' 
                 'TARIFA DE EMBARQUE R$2,55'
 			)
+        #
+        #
+        # VIAÇÃO TRANSUR:
+        #
         elif nome  in cidade_6 and nome  in tarifa_4:
             resultado = (
 				'=-=-=- EMPRESA: VIAÇÃO TRANSUR - GUICHÊS: 09 e 10=-=-=-\n\nCONTATO: (32) 3218-3613\n' 
@@ -362,6 +431,10 @@ class MainApp(App):
                 'PLATAFORMA: 17\n\n'
                 'TARIFA DE EMBARQUE R$5,25'
 			)
+        #
+        #
+        # VIAÇÃO BASSAMAR:
+        #
         elif nome  in cidade_7 and nome  in tarifa_1:
             resultado = (
 				'=-=-=- EMPRESA: VIAÇÃO BASSAMAR - GUICHÊ: 31 =-=-=-\n\nCONTATO: (32) 3215-1109\n' 
@@ -370,6 +443,10 @@ class MainApp(App):
 				'PLATAFORMAS: 19, 20, e 21\n\n'
 			    'TARIFA DE EMBARQUE R$0,85'
 			)
+        #
+        #
+        # VIAÇÃO BASSAMAR:
+        #
         elif nome in cidade_7 and nome in tarifa_2:
             resultado = (
 				'=-=-=- EMPRESA: VIAÇÃO BASSAMAR - GUICHÊ: 31 =-=-=-\n\nCONTATO: (32) 3215-1109\n' 
@@ -378,6 +455,10 @@ class MainApp(App):
 				'PLATAFORMAS: 19, 20, e 21\n\n'
 			    'TARIFA DE EMBARQUE R$1,45'
 			)
+        #
+        #
+        # VIAÇÃO BASSAMAR:
+        #
         elif nome in cidade_7 and nome in tarifa_3:
             resultado = (
 				'=-=-=- EMPRESA: VIAÇÃO BASSAMAR - GUICHÊ: 31 =-=-=-\n\nCONTATO: (32) 3215-1109\n' 
@@ -385,6 +466,10 @@ class MainApp(App):
 				'PLATAFORMAS: 19, 20, e 21\n\n'
 			    'TARIFA DE EMBARQUE R$2,55'
 			)
+		#
+        #
+        # VIAÇÃO BASSAMAR:
+        #
         elif nome in cidade_7 and nome in tarifa_4:
             resultado = (
 				'=-=-=- EMPRESA: VIAÇÃO BASSAMAR - GUICHÊ: 31 =-=-=-\n\nCONTATO: (32) 3215-1109\n' 
@@ -392,6 +477,10 @@ class MainApp(App):
 				'FUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 19, 20, e 21\n\n'
 			    'TARIFA DE EMBARQUE R$5,25'
 			)
+        #
+        #
+        # VIAÇÃO RIO DOCE:
+        #
         elif nome in cidade_8 and nome in tarifa_4:
             resultado = (
 				'EMPRESA: VIAÇÃO RIO DOCE - GUICHÊ: 32\n\nCONTATO: (32)3215-8828\n' 
@@ -399,6 +488,10 @@ class MainApp(App):
 				'PLATAFORMA: 24\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 			)
+		#
+        #
+        # VIAÇÃO SANTA CRUZ:
+        #
         elif nome in cidade_9 and nome in tarifa_2:
             resultado = (
 				'EMPRESA: VIAÇÃO SANTA CRUZ  -  SUL MINAS\n\nCONTATO: (32) 3025-3936  -  GUICHÊ: 29\n' 
@@ -406,6 +499,10 @@ class MainApp(App):
 				'PLATAFORMA: 16\n\n'
 				'TARIFA DE EMBARQUE R$1,45'
 			)
+        #
+        #
+        # VIAÇÃO SANTA CRUZ:
+        #
         elif nome in cidade_9 and nome in tarifa_3:
             resultado = (
 				'EMPRESA: VIAÇÃO SANTA CRUZ  -  SUL MINAS\n\nCONTATO: (32) 3025-3936  -  GUICHÊ: 29\n' 
@@ -413,6 +510,10 @@ class MainApp(App):
 				'PLATAFORMA: 16\n\n'
 				'TARIFA DE EMBARQUE R$2,55'
 			)
+		#
+        #
+        # VIAÇÃO SANTA CRUZ:
+        #
         elif nome in cidade_9 and nome in tarifa_4:
             resultado = (
 				'EMPRESA: VIAÇÃO SANTA CRUZ  -  SUL MINAS\n\nCONTATO: (32) 3025-3936  -  GUICHÊ: 29\n' 
@@ -420,6 +521,10 @@ class MainApp(App):
 				'PLATAFORMA: 16\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 			)
+        #
+        #
+        # VIAÇÃO GONTIJO:
+        #
         elif nome in cidade_10 and nome in tarifa_4:
             resultado = (
 				'EMPRESA:VIAÇÃO GONTIJO - GUICHÊ: 27\n\nCONTATO:(32) 3215-9458  -  (32) 98710-6414\n' 
@@ -427,6 +532,10 @@ class MainApp(App):
 				'PLATAFORMA: 27\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 			)
+        #
+        #
+        # VIAÇÃO SANTA PARAIBUNA:
+        #
         elif nome in cidade_11 and nome in tarifa_1:
             resultado = (
 				'EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n'
@@ -435,6 +544,10 @@ class MainApp(App):
 				'PLATAFORMA: 18\n\n'
 				'TARIFA DE EMBARQUE R$0,85'
 			)
+		#
+        #
+        # VIAÇÃO SANTA PARAIBUNA:
+        #
         elif nome in cidade_11 and nome in tarifa_2:
            	resultado = (
 				'EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n'
@@ -443,6 +556,10 @@ class MainApp(App):
 				'PLATAFORMA: 18\n\n'
 				'TARIFA DE EMBARQUE R$1,45'
 			)
+        #
+        #
+        # VIAÇÃO SANTA PARAIBUNA:
+        #
         elif nome in cidade_11 and nome in tarifa_3:
             resultado = (
 				'EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n' 
@@ -450,6 +567,10 @@ class MainApp(App):
 				'FUNCIONAMENTO:\n\neg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\nsab e dom: 05h15 - 10h30 - 11h30- 18h\n' 'PLATAFORMA: 18\n\n'
 				'TARIFA DE EMBARQUE R$2,55'
 			)
+		#
+        #
+        # VIAÇÃO SANTA PARAIBUNA:
+        #
         elif nome in cidade_11 and nome in tarifa_4:
             resultado = (
 				'EMPRESA: VIAÇÃO PARAIBUNA - GUICHÊS: 12 e 13\n\nCONTATO: (32) 2101-3314 / (32) 3216-2975(PANTUR) / (32)2101-3333\n'
@@ -457,23 +578,40 @@ class MainApp(App):
 				'FUNCIONAMENTO:\n\nseg à qui: 05h45 - 10h30 - 11h30 às 18h\n	sex: 05h45 - 10h30 - 11h30 - 14h e 15h15 - 19h\nsab e dom: 05h15 - 10h30 - 11h30- 18h\n\nPLATAFORMA: 18\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 			)
+        #
+        #
+        #  VIAÇÃO EXPRESSO UNIÃO / PLUMA:
+        #
         elif nome in cidade_12 and nome in tarifa_4:
            resultado = (
 				'EMPRESA: VIAÇÃO EXPRESSO UNIÃO / PLUMA - GUICHÊ: 25\n\nCONTATO: (32) 99177-0200\n\nSITE: https://www.expressouniao.com.br\n' 
-				'FUNCIONAMENTO:\nseg - sex 09h - 18h\nsab dom feriados 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 29'
+				'FUNCIONAMENTO:\nseg - sex 08h - 18h\nsab dom feriados 14h30 - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 29\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 		   )
+		#
+        #
+        #  VIAÇÃO UNICA FACIL:
+        #
         elif nome in cidade_13 and nome in tarifa_3:
             resultado = (
 				'=-=-=- EMPRESA: VIAÇÃO UNICA FACIL - GUICHÊ: 14 =-=-=-\n\nCONTATOS:\nCentral: (24)2244-1642 ou (24)2244-1600 (GARAGEM)\nPANTUR: 3216-2975\n' 
 				'SITE: http://www.unicafacil.com.br/\nFUNCIONAMENTO: seg à sab: 05h40 - 18h30 dom: 05h40 à 17h40\nPLATAFORMA:19\n\n'
-				'TARIFA DE EMBARQUE R$2,55')
+				'TARIFA DE EMBARQUE R$2,55'
+            )
+        #
+        #
+        #  VIAÇÃO UNICA FACIL:
+        #
         elif nome in cidade_13 and nome in tarifa_4:
            resultado = (
 			   '=-=-=- EMPRESA: VIAÇÃO UNICA FACIL - GUICHÊ: 14 =-=-=-\n\nCONTATOS:\nCentral: (24)2244-1642 ou (24)2244-1600 (GARAGEM)\nPANTUR: 3216-2975\n' 
 				'SITE: http://www.unicafacil.com.br/\nFUNCIONAMENTO: seg à sab: 05h40 - 18h30 dom: 05h40 à 17h40\nPLATAFORMA:19\n\n'
 			   'TARIFA DE EMBARQUE R$5,25'
 			)
+        #
+        #
+        #   VIAÇÃO JOSÉ MARIA RODRIGUES:
+        #
         elif nome in cidade_14 and nome in tarifa_1:
             resultado = (
 				'-=- EMPRESA: VIAÇÃO JOSÉ MARIA RODRIGUES - GUICHÊ 06 e 07 -=-\n\nCONTATO: (32)3215-4460 / (32) 3221-3232\n' 
@@ -481,6 +619,10 @@ class MainApp(App):
 				'PLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO\n\n'
 				'TARIFA DE EMBARQUE R$0,85'
 			)
+        #
+        #
+        #   VIAÇÃO JOSÉ MARIA RODRIGUES:
+        #
         elif nome in cidade_14 and nome in tarifa_2:
             resultado = (
 				'-=- EMPRESA: VIAÇÃO JOSÉ MARIA RODRIGUES - GUICHÊ 06 e 07 -=-\n\nCONTATO: (32)3215-4460 / (32) 3221-3232\n' 
@@ -488,6 +630,10 @@ class MainApp(App):
 				'PLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO\n\n'
 				'TARIFA DE EMBARQUE R$1,45'
 			)
+        #
+        #
+        #   VIAÇÃO JOSÉ MARIA RODRIGUE:
+        #
         elif nome in cidade_14 and nome in tarifa_3:
             resultado = (
 				'-=- EMPRESA: VIAÇÃO JOSÉ MARIA RODRIGUES - GUICHÊ 06 e 07 -=-\n\nCONTATO: (32)3215-4460 / (32) 3221-3232\n' 
@@ -495,12 +641,20 @@ class MainApp(App):
 				'PLATAFORMAS: 9 e 20 (Plataforma 20 "CONEXÂO AEROPORTO\n\n'
 				'TARIFA DE EMBARQUE R$2,55'
 		)
+        #
+        #
+        #   VIAÇÃO ÀGUIA BRANCA:
+        #
         elif nome in cidade_15 and nome in tarifa_4:
             resultado = (
 				'EMPRESA: VIAÇÃO ÀGUIA BRANCA - GUICHÊ 26\n\nCONTATO:(32) 98710-6414\nSITE: https://www.aguiabranca.com.br\n' 
 				'FUNCIONAMENTO:seg - sex 09h - 18h\nsab 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 12\n\n'
 				'TARIFA DE EMBARQUE R$5,25'
 			)
+        #
+        #
+        # VIAÇÃO ITAPEMIRIM / KAISSARA:
+        #
         elif nome in cidade_16:
             resultado = (
 				'EMPRESA: VIAÇÃO ITAPEMIRIM / KAISSARA - GUICHÊ: 29\n\nCONTATOS: (32) 3215-5020 \n0800 723 2121\n' 
@@ -508,6 +662,32 @@ class MainApp(App):
 				'TARIFA DE EMBARQUE R$5,25'
 			)
 		#
+        # VIAÇÃO BRASIL BUS:
+        #
+        if nome in cidade_17 and nome in tarifa_3:
+            resultado = (
+               'EMPRESA: VIAÇÃO "brasil bus" - GUICHÊ: 25\n\nCONTATO: (32) 99177-0200\n' 
+				'FUNCIONAMENTO:\nseg - sex 08h - 18h\nsab dom feriados 14h30 - 18h (Intervalo: 12h30 - 13h30)\nPLATAFORMA: 29\n\n'
+				'TARIFA DE EMBARQUE R$2,55' 
+			)
+        #
+        if nome in cidade_17 and nome in tarifa_4:
+            resultado = (
+               'EMPRESA: VIAÇÃO "brasil bus" - GUICHÊ: 25\n\nCONTATO: (32) 99177-0200\n' 
+				'FUNCIONAMENTO:\nseg - sex 08h - 18h\nsab dom feriados 14h30 - 18h (Intervalo: 12h30 - 13h30)\nPLATAFORMA: 29\n\n'
+				'TARIFA DE EMBARQUE R$5,25' 
+			)
+        #
+        #
+        #   VIAÇÃO RODE ROTAS:
+        #
+        elif nome in cidade_15 and nome in tarifa_4:
+            resultado = (
+				'EMPRESA: VIAÇÃO RODE ROTAS - GUICHÊ 26\n\nCONTATO:(32) 98710-6414\n' 
+				'FUNCIONAMENTO:seg - sex 09h - 18h\nsab 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 12\n\n'
+				'TARIFA DE EMBARQUE R$5,25'
+			)
+        #
 		######################################################################################################################################################################
 		#
 		# LISTA DE ORGÃOS PÚBLICOS,LOJAS, SERVIÇOS E GUICHÊS NO INTERIOR DO TRJF:
@@ -853,7 +1033,7 @@ class MainApp(App):
 		#
 		# VIAÇÃO PROGRESSO...
 		#
-        elif nome == 'progresso' or nome == 'viação progresso' or nome == 'viaçao progresso' or nome == 'viacao progresso':
+        elif nome == 'progresso' or nome == 'viação progresso' or nome == 'viaçao progresso' or nome == 'viacao progresso' or nome == 'viaçãoprogresso':
             resultado = (
 				'-=-=-=-= EMPRESA: VIAÇÃO PROGRESSO - GUICHÊ: 30 -=-=-=-=\n\nCONTATOS:\nRODOVIÁRIA TRÊS RIOS (24)2251-5050\nPANTUR/JUIZ DE FORA:(32) 3216-2975 - WHATSAPP (32)98849-0016\nCENTER TOUR: (32) 3025-3936\nSITE: https://www.viacaoprogresso.com.br\nFUNCIONAMENTO: seg - sab 06h - 19h / dom 07h - 22h\n\nPLATAFORMAS: 25 e 26'
 			)
@@ -915,10 +1095,18 @@ class MainApp(App):
 		#
 		# VIAÇÃO UNIÃO...
 		#
-        elif nome == 'união' or nome == 'uniao' or nome == 'expresso união' or nome == 'expresso uniao' or nome == 'expressounião' or nome == 'expressouniao' or nome == 'pluma' or nome == 'brasilbus' or nome == 'brasil bus':
+        elif nome == 'união' or nome == 'uniao' or nome == 'expresso união' or nome == 'expresso uniao' or nome == 'expressounião' or nome == 'expressouniao' or nome == 'pluma':
             resultado = (
-				'EMPRESA: VIAÇÃO EXPRESSO UNIÃO / PLUMA / BRASIL BUS - GUICHÊ: 25\n\nCONTATO: (32) 99177-0200\n\nSITE: https://www.expressouniao.com.br\n' 
-				'FUNCIONAMENTO:\nseg - sex 09h - 18h\nsab dom feriados 14h - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 29'
+				'EMPRESA: VIAÇÃO EXPRESSO UNIÃO / PLUMA / "brasil bus" - GUICHÊ: 25\n\nCONTATO: (32) 99177-0200\n\nSITE: https://www.expressouniao.com.br\n' 
+				'FUNCIONAMENTO:\nseg - sex 08h - 18h\nsab dom feriados 14h30 - 18h (Intervalo: 12h30 - 13h30)\n\nPLATAFORMA: 29'
+			)
+        #
+        # VIAÇÃO BRASIL BUS:
+        #
+        elif nome == '"brasil bus"' or nome == 'brasilbus':
+            resultado = (
+               'EMPRESA: VIAÇÃO "brasil bus" - GUICHÊ: 25\n\nCONTATO: (32) 99177-0200\n' 
+				'FUNCIONAMENTO:\nseg - sex 08h - 18h\nsab dom feriados 14h30 - 18h (Intervalo: 12h30 - 13h30)\nPLATAFORMA: 29\n' 
 			)
 		#
 		# VIAÇÃO UNICA...
