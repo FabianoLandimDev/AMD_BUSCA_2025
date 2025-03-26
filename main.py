@@ -5,6 +5,7 @@ from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 from kivy.uix.scrollview import ScrollView
 from kivy.uix.gridlayout import GridLayout
+from kivy.uix.image import Image
 
 
 # Nome_do _programa: AMD_BUSCA
@@ -152,38 +153,94 @@ lista_geral = ['inss', 'previdencia', 'previdência', 'previdência social', 'co
 class MainApp(App):
     def build(self):
         self.combined_cidades = self.get_combined_cidades()
-        self.title = "AMD BUSCA  -  v1.0.6_2025_03_18 / Desenvolvido por: Fabiano Landim"
+        self.title = "AMD BUSCA  -  v1.0.6_2025_03_26 / Desenvolvido por: Fabiano Landim"
         
-        layout = BoxLayout(orientation='vertical', padding=10, spacing=10)
+        layout = BoxLayout(orientation='vertical', padding=20, spacing=15)
+
+        header_layout = BoxLayout(orientation='horizontal', size_hint_y=None, height=60, spacing=10)
         
         title = Label(
-            text="\\\*/// AMD BUSCA \\\*///",
-            font_size=24,
+            text="[b][color=#1E90FF]AMD BUSCA[/color][/b]",
+            font_size=32,
+            markup=True,
+            halign='left',
+            valign='middle',
+            size_hint_x=0.7 
+        )
+        title.bind(size=title.setter('text_size'))
+        layout.add_widget(title)
+
+         # Imagem ao lado do título
+        image = Image(
+            source="AMD_TECH.jpeg",
+            size_hint_x=0.3, 
+            allow_stretch=True,
+            keep_ratio=True     
+        )
+
+        # Adicionando o título e a imagem ao layout horizontal
+        header_layout.add_widget(title)
+        header_layout.add_widget(image)
+        
+        # Adicionando o cabeçalho ao layout principal
+        layout.add_widget(header_layout)
+        
+        # Subtítulo ou descrição abaixo do título
+        subtitle = Label(
+            text="Busque resultados com precisão e eficiência.",
+            font_size=14,
             size_hint_y=None,
             height=30,
-            color=('#1E90FF')
+            color=(0.5, 0.5, 0.5, 1),  # Cinza claro para um tom profissional
+            halign='center'
         )
-        layout.add_widget(title)
+        layout.add_widget(subtitle)
         
+        # Campo de entrada com estilo moderno
         self.input = TextInput(
-            hint_text="PESQUISAR POR: (RESULTADOS PARA A MESMA CIDADE, ESCREVA O NOME COMPLETO)",
-            font_size=18,
+            hint_text="Digite o nome da cidade ou termo de pesquisa...",
+            font_size=16,
             size_hint_y=None,
-            height=40
+            height=50,
+            background_color=(0.95, 0.95, 0.95, 1),  # Fundo claro para o campo de entrada
+            foreground_color=(0.2, 0.2, 0.2, 1),     # Texto escuro para contraste
+            multiline=False
         )
         self.input.bind(text=self.update_suggestions)
         layout.add_widget(self.input)
+    
+        # Layout para botões com design moderno
+        button_layout = BoxLayout(size_hint_y=None, height=60, spacing=15)
         
-        button_layout = BoxLayout(size_hint_y=None, height=50, spacing=10)
-        search_button = Button(text="Pesquisar", on_press=self.pesquisar)
-        clear_button = Button(text="Limpar", on_press=self.limpar)
-        exit_button = Button(text="Sair", on_press=self.sair)
+        search_button = Button(
+            text="PESQUISAR",
+            on_press=self.pesquisar,
+            background_color=(0.1, 0.5, 0.9, 6),
+            color=(1, 1, 1, 1),
+            font_size=16
+        )
+        clear_button = Button(
+            text="LIMPAR",
+            on_press=self.limpar,
+            background_color=(0.8, 0.2, 0.2, 6),
+            color=(1, 1, 1, 1),
+            font_size=16
+        )
+        exit_button = Button(
+            text="SAIR",
+            on_press=self.sair,
+            background_color=(0.3, 1, 0.3, 6),
+            color=(1, 1, 1, 1),
+            font_size=16
+        )
+        #
         button_layout.add_widget(search_button)
         button_layout.add_widget(clear_button)
         button_layout.add_widget(exit_button)
         layout.add_widget(button_layout)
-        
+        #
         # Área de sugestões
+        #
         self.suggestions_grid = GridLayout(cols=1, spacing=2, size_hint_y=None)
         self.suggestions_grid.bind(minimum_height=self.suggestions_grid.setter('height'))
         scroll_suggestions = ScrollView(size_hint=(1, None), height=150)
@@ -194,9 +251,9 @@ class MainApp(App):
         scroll_view = ScrollView()
         self.output = Label(
             text="",
-            font_size=18,
+            font_size=15,
             size_hint_y=None,
-            height=450,
+            height=400,
             markup=True
         )
         scroll_view.add_widget(self.output)
