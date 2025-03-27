@@ -153,31 +153,33 @@ lista_geral = ['inss', 'previdencia', 'previdência', 'previdência social', 'co
 class MainApp(App):
     def build(self):
         self.combined_cidades = self.get_combined_cidades()
-        self.title = "AMD BUSCA  -  v1.0.6_2025_03_26 / Desenvolvido por: Fabiano Landim"
+        self.title = "AMD BUSCA - v1.0.6_2025_03_18 | Desenvolvido por: Fabiano Landim"
         
+        # Layout principal
         layout = BoxLayout(orientation='vertical', padding=20, spacing=15)
-
+        
+        # Layout horizontal para o título e a imagem
         header_layout = BoxLayout(orientation='horizontal', size_hint_y=None, height=60, spacing=10)
         
+        # Título principal com design moderno
         title = Label(
             text="[b][color=#1E90FF]AMD BUSCA[/color][/b]",
             font_size=32,
             markup=True,
             halign='left',
             valign='middle',
-            size_hint_x=0.7 
+            size_hint_x=0.7  # Ocupa 70% do espaço horizontal
         )
-        title.bind(size=title.setter('text_size'))
-        layout.add_widget(title)
-
-         # Imagem ao lado do título
+        title.bind(size=title.setter('text_size'))  # Ajuste automático do texto dentro do Label
+        
+        # Imagem ao lado do título
         image = Image(
-            source="AMD_TECH.jpeg",
-            size_hint_x=0.3, 
-            allow_stretch=True,
-            keep_ratio=True     
+            source="logo.png",  # Substitua "logo.png" pelo caminho da sua imagem
+            size_hint_x=0.3,    # Ocupa 30% do espaço horizontal
+            allow_stretch=True, # Permite que a imagem seja redimensionada
+            keep_ratio=True     # Mantém a proporção da imagem
         )
-
+        
         # Adicionando o título e a imagem ao layout horizontal
         header_layout.add_widget(title)
         header_layout.add_widget(image)
@@ -208,58 +210,65 @@ class MainApp(App):
         )
         self.input.bind(text=self.update_suggestions)
         layout.add_widget(self.input)
-    
+        
         # Layout para botões com design moderno
         button_layout = BoxLayout(size_hint_y=None, height=60, spacing=15)
         
         search_button = Button(
-            text="PESQUISAR",
+            text="Pesquisar",
             on_press=self.pesquisar,
-            background_color=(0.1, 0.5, 0.9, 6),
-            color=(1, 1, 1, 1),
+            background_color=(0.1, 0.5, 0.9, 1),  # Azul vibrante para chamar atenção
+            color=(1, 1, 1, 1),                   # Texto branco para contraste
             font_size=16
         )
         clear_button = Button(
-            text="LIMPAR",
+            text="Limpar",
             on_press=self.limpar,
-            background_color=(0.8, 0.2, 0.2, 6),
+            background_color=(0.8, 0.2, 0.2, 1),  # Vermelho suave para ação de limpeza
             color=(1, 1, 1, 1),
             font_size=16
         )
         exit_button = Button(
-            text="SAIR",
+            text="Sair",
             on_press=self.sair,
-            background_color=(0.3, 1, 0.3, 6),
+            background_color=(0.3, 0.3, 0.3, 1),  # Cinza escuro para sair
             color=(1, 1, 1, 1),
             font_size=16
         )
-        #
         button_layout.add_widget(search_button)
         button_layout.add_widget(clear_button)
         button_layout.add_widget(exit_button)
         layout.add_widget(button_layout)
-        #
-        # Área de sugestões
-        #
-        self.suggestions_grid = GridLayout(cols=1, spacing=2, size_hint_y=None)
+        
+        # Área de sugestões com scroll (reduzida para liberar espaço)
+        self.suggestions_grid = GridLayout(cols=1, spacing=5, size_hint_y=None)
         self.suggestions_grid.bind(minimum_height=self.suggestions_grid.setter('height'))
-        scroll_suggestions = ScrollView(size_hint=(1, None), height=150)
+        scroll_suggestions = ScrollView(size_hint=(1, None), height=100)  # Altura reduzida
         scroll_suggestions.add_widget(self.suggestions_grid)
         layout.add_widget(scroll_suggestions)
         
-        # Área de saída
-        scroll_view = ScrollView()
+        # Área de saída com scroll (otimizada para maior visibilidade)
+        scroll_view = ScrollView(size_hint_y=0.6)  # Aumenta a proporção vertical
         self.output = Label(
             text="",
-            font_size=15,
+            font_size=18,  # Fonte maior para melhor legibilidade
             size_hint_y=None,
-            height=400,
-            markup=True
+            text_size=(None, None),  # Permite que o texto se ajuste automaticamente
+            markup=True,
+            color=(0.1, 0.1, 0.1, 1),  # Texto escuro para legibilidade
+            padding=(10, 10),  # Adiciona espaçamento interno para melhorar a aparência
+            halign='left',
+            valign='top'
         )
+        self.output.bind(size=self.adjust_output_height)  # Ajusta a altura dinamicamente
         scroll_view.add_widget(self.output)
         layout.add_widget(scroll_view)
         
         return layout
+
+    def adjust_output_height(self, instance, value):
+        """Ajusta a altura do Label de saída dinamicamente com base no conteúdo."""
+        self.output.height = max(instance.texture_size[1], 400)  # Garante uma altura mínima
 
     def get_combined_cidades(self):
         return (
