@@ -44,7 +44,7 @@ from kivy.uix.image import Image
 # Licença: MIT.
 #
 #
-# v1.0.6_2025_03_24, Fabiano Landim
+# v1.0.6_2025_03_31, Fabiano Landim
 # - Foram realizadas mudanças significativas no Programa, nessa versão em diante o mesmo funcionará na biblioteca kivy do Python, sendo assim houveram mudanças no Layout.
 # Licença: MIT
 #
@@ -153,7 +153,7 @@ lista_geral = ['inss', 'previdencia', 'previdência', 'previdência social', 'co
 class MainApp(App):
     def build(self):
         self.combined_cidades = self.get_combined_cidades()
-        self.title = "AMD BUSCA - v1.0.6_2025_03_18 | Desenvolvido por: Fabiano Landim"
+        self.title = "AMD BUSCA - v1.0.6_2025_03_31 | Desenvolvido por: Fabiano Landim"
         
         # Layout principal
         layout = BoxLayout(orientation='vertical', padding=20, spacing=15)
